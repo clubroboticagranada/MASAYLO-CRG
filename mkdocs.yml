@@ -1,0 +1,107 @@
+# 1. Información
+site_name: MASAYLO-CRG
+site_description: MASAYLO-CRG es un robot creado a partir de la idea de Antonio Gómez (https://github.com/agomezgar/masaylo) del que se van a desarrollar las tres versiones que se describen en la documentación y que tiene como propósito principal ser un robot sencillo de imprimir y de construir y que pueda servir para iniciar en el tema STEAM al alumnado desde los últimos cursos de educación primaria hasta bachillerato y ciclos formativos pasando por las distintas etapas de la ESO.
+
+site_author: Antonio Gómez, Pedro Ruiz, Manuel Hidalgo, Prudencio Luna, José Luis Bueno y Federico Coca
+site_url: https://clubroboticagranada.github.io/MASAYLO-CRG/
+
+# 2. Repositorio
+repo_name: clubroboticagranada/MASAYLO-CRG
+repo_url: https://github.com/clubroboticagranada/MASAYLO-CRG
+edit_uri: ""
+
+# 3. Copyright
+copyright: Copyright & copy; 2021 - 2030 Club Robotica Granada
+
+# 4. RRSS
+# extra:
+#  social:
+#    - type: 'github'
+#      link: 'https://github.com/fgcoca'
+#    - type: 'twitter'
+#      link: 'https://twitter.com/fgcoca'
+
+# 5. Navegación
+nav:
+  - Introducción: index.md
+  - Materiales 3D:
+    - Ficheros: ficheros.md
+    - Materiales necesarios: materiales.md
+    - Ensamblado: ensamble.md
+  - Miscelanea:
+    - Autor: Miscelanea/about.md 
+    - Licencias: Miscelanea/lic.md
+    - Webgrafia/Bibliografía: Miscelanea/webgrafia.md
+    - Software utilizado: Miscelanea/soft.md
+
+# 6. Google Analytics
+#google_analytics:
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#  - auto
+
+# 7. Configuración del tema
+theme:
+  name: material
+  # Color - Fuentes - Lenguaje
+  palette:
+    primary: light blue
+    accent: deep purple 
+  font:
+    text: Roboto 
+    code: Roboto Mono 
+  logo: img/favicon.png 
+  favicon: img/favicon.png 
+  language: es
+  extra:
+    search:
+      language: es, en
+  # Página 404
+  static_templates:
+    - 404.html
+  # No incluir los JavaScript de MkDocs
+  #include_search_page: false
+  #search_index_only: true
+
+# 8. Extensiones
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      linenums: true
+      # guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# 9. Necesario para la extensión pydownx.arithmatex
+extra_javascript:
+  # Este fichero es opcional y solo si se quiere sobreescribir la configuracion del plugin
+  #- js/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+
+# 10. Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
