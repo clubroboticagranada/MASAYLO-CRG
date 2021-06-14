@@ -26,10 +26,9 @@ nav:
   - Introducción: index.md
   - Materiales 3D:
     - Ficheros: ficheros.md
-    - Materiales necesarios: materiales.md
-    - Ensamblado: ensamble.md
+    - Materiales necesarios y ensamblado: ensamble.md
   - Miscelanea:
-    - Autor: Miscelanea/about.md 
+    - Autores: Miscelanea/about.md
     - Licencias: Miscelanea/lic.md
     - Webgrafia/Bibliografía: Miscelanea/webgrafia.md
     - Software utilizado: Miscelanea/soft.md
