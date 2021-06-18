@@ -3,7 +3,7 @@
 En este apartado se incluyen los enlaces a los archivos siguientes:
 
 ## Archivos fuente de diseño
-Creados con [FreeCAD](https://www.freecadweb.org/) que puede modificar, cambiar según necesidades o utilizar para aprender el manejo de esta potente herramienta.
+Creados con [FreeCAD](https://www.freecadweb.org/) que puedes modificar, cambiar según necesidades o utilizar para aprender el manejo de esta potente herramienta.
 
 <center>
 
@@ -12,7 +12,7 @@ Creados con [FreeCAD](https://www.freecadweb.org/) que puede modificar, cambiar 
 | [plataforma-base-src.FCStd](../img/3D/src/plataforma-base-src.FCStd) | Para colocar el portapilas, los motores DC, el zumbador y el ballcaster o punto de apoyo estilo rueda loca |
 | [soporte-zumbador-src.FCStd](../img/3D/src/soporte-zumbador-src.FCStd) | Para colocar un zumbador pasivo. Esta pieza también se puede colocar en la plataforma superior |
 | [soporte-sensores-IR-ballcaster.FCStd](../img/3D/src/soporte-sensores-IR-ballcaster.FCStd) | Contiene dos piezas, el ballcaster y el soporte de los sensores verticales de IR |
-| [soportes-ultrasonidos.FCStd](../img/3D/src/soportes-ultrasonidos.FCStd) | Contiene los soporte fijo y móvil para el sensor HC04 |
+| [soportes-ultrasonidos.FCStd](../img/3D/src/soportes-ultrasonidos.FCStd) | Contiene los soporte fijo y móvil para el sensor HC-SR04 |
 | [plataforma-superior-src.FCStd](../img/3D/src/plataforma-superior-src.FCStd) | Para colocar cualquiera de las placas, el interruptor y sujetar el servo del brazo |
 | [base-servo-src.FCStd](../img/3D/src/base-servo-src.FCStd) | Pieza para sujetar un servo tipo SG90 |
 | [brazo-src.FCStd](../img/3D/src/brazo-src.FCStd) | Brazo aparta objetos con alojamiento para la pala del servo |

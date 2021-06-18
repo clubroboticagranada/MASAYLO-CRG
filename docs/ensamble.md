@@ -73,8 +73,8 @@ En la imagen 4 tenemos el interruptor preparado para la instalación. Debemos te
 
 | **Previo. Materiales para los motores** | Imágenes |
 |---|:-:|
-| <br>Si partimos de la base que los motores no vienen ya preinstalados con cables, necesitamos:</br><br>- 2 motores DC de 3 a 6V con reductora</br><br>- 4 trozos de hilos de diferentes colores</br><br>- Tijeras o pelacables</br><br>- Soldador para electrónica</br><br>- Se aconseja usar estaño de 1mm sin plomo con núcleo de resina y composición del 99% de Sn, 3% de Ag y 0.7% de Cu</br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen superior vemos los motores y los cables sin soldar --></FONT></P></br> | ![Motores y cables sin soldar](../img/ensamble/i1.png) |
-| </br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen inferior vemos los motores con los cables soldados --></FONT></P></br>  | ![Motores cableados](../img/ensamble/i2.png) |
+| <br>Si partimos de la base que los motores no vienen ya preinstalados con cables, necesitamos:</br><br>- 2 motores DC de 3 a 6V con reductora</br><br>- 4 trozos de hilos de diferentes colores</br><br>- Tijeras o pelacables</br><br>- Soldador para electrónica</br><br>- Se aconseja usar estaño de 1mm sin plomo con núcleo de resina y composición del 99% de Sn, 3% de Ag y 0.7% de Cu</br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen vemos los motores y los cables sin soldar --></FONT></P></br> | ![Motores y cables sin soldar](../img/ensamble/i1.png) |
+| </br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen vemos los motores con los cables soldados --></FONT></P></br>  | ![Motores cableados](../img/ensamble/i2.png) |
 
 | **Previo. Materiales necesarios para el portapilas** | Imágenes |
 |---|:-:|
