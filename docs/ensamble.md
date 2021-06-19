@@ -74,3 +74,4 @@ En la imagen siguiente vemos la plataforma base con el soporte para zumbador col
 
 ## Ballcaster y porta sensores IR
 
+## kkkk
