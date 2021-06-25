@@ -14,10 +14,10 @@ Este proyecto es una colaboración entre distintos miembros de [Club Robotica Gr
 
 <center>
 
-| ![Manuel Hidalgo](../img/Manuel.png) | ![Prudencio Luna]() | ![José Luis Bueno]() | ![Maribel Ruiz]() |
+| ![Manuel Hidalgo](../img/Manuel.png) | ![Prudencio Luna](../img/Pruden.png) | ![José Luis Bueno](../img/JoseL.png) | ![Maribel Ruiz]() |
 |:|:|:|:|
 | Manuel Hidalgo | Prudencio Luna | José Luis Bueno | Maribel Ruiz |
-| [GitHub](https://github.com/leobotmanuel) | [GitHub](https://github.com/plunax) | | |
+| [GitHub](https://github.com/leobotmanuel) | [GitHub](https://github.com/plunax) | --- | |
 | [Twitter](https://twitter.com/leobotmanuel) | [Twitter](https://twitter.com/plunax) | [Twitter](https://twitter.com/jbtecno) | |
 
 </center>
