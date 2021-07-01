@@ -1,8 +1,8 @@
-# Ficheros
+# <FONT COLOR=#8B008B>Ficheros</font>
 ***
 En este apartado se incluyen los enlaces a los archivos siguientes:
 
-## Archivos fuente de diseño
+## <FONT COLOR=#007575>**Archivos fuente de diseño**</font>
 Creados con [FreeCAD](https://www.freecadweb.org/) que puedes modificar, cambiar según necesidades o utilizar para aprender el manejo de esta potente herramienta.
 
 <center>
@@ -25,7 +25,7 @@ Creados con [FreeCAD](https://www.freecadweb.org/) que puedes modificar, cambiar
 
 </center>
 
-## Archivos STL y STEP
+## <FONT COLOR=#007575>**Archivos STL y STEP**</font>
 * Archivos en formato **stl**, listos para llevar a tu programa de laminación preferido y hacerlos realidad con tu impresora.
 
 La configuración de impresión debe adaptarse en cada caso a la impresora disponible, aunque hacemos las siguientes recomendaciones:

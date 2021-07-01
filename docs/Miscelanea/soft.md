@@ -1,4 +1,4 @@
-# Software utilizado
+# <FONT COLOR=#8B008B>Software utilizado</font>
 
 * Dibujo 3D [FreeCAD 0.19](https://www.freecadweb.org/)
   
@@ -17,3 +17,5 @@
 * Dibujo 2D vectorial [Inkscape](https://inkscape.org/es/)
 
 * Retoque de imágenes [GIMP](https://www.gimp.org/)
+
+* Creación de GIF animado a partir de video con [FFMPEG](https://www.ffmpeg.org/) y [GIMP](https://www.gimp.org/)

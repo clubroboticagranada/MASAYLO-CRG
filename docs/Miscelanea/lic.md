@@ -1,4 +1,4 @@
-# Licencias
+# <FONT COLOR=#8B008B>Licencias</font>
 
 ***
 
@@ -12,4 +12,10 @@
 
 </center>
 
-* OSHW 
+* Open Source Hardware (OSHW). [Enlace a la versión V 1.0 original de la licencia](https://freedomdefined.org/OSHW) - [Enlace a la traducción de la versión V 1.0 original de la licencia](https://freedomdefined.org/OSHW/translations/es) - [Spanish - Open Source Hardware Association](https://www.oshwa.org/definition/spanish/)
+
+<center>
+
+![logo OSHW](../img/oshw-logo-100-px.png)
+
+</center>

@@ -1,4 +1,4 @@
-# MASAYLO - CRG
+# <FONT COLOR=#8B008B>MASAYLO - CRG</font>
 
 MASAYLO-CRG es un robot creado a partir de la idea de Antonio Gómez (https://github.com/agomezgar/masaylo) del que se van a desarrollar tres versiones:
 

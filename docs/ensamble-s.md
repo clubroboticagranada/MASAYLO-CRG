@@ -1,8 +1,8 @@
-# Materiales necesarios y ensamblado plataforma superior
+# <FONT COLOR=#8B008B>Materiales necesarios y ensamblado plataforma superior</font>
 
 ***
 
-## Plataforma superior
+## <FONT COLOR=#007575>**Plataforma superior**</font>
 En esta pieza es donde vamos a colocar el servo para el brazo aparta objetos y los elementos de electrónica correspondientes a cada versión. El brazo lo podemos color tanto a la derecha como a la izquierda y recordemos que de forma opcional podemos poner también el soporte del zumbador o un sensor fijo de ultrasonidos. El aspecto de la pieza denominada plataforma superior lo vemos en la imagen siguiente.
 
 <center>
@@ -13,7 +13,7 @@ En esta pieza es donde vamos a colocar el servo para el brazo aparta objetos y l
 
 </center>
 
-## Brazo aparta objetos
+## <FONT COLOR=#007575>**Brazo aparta objetos**</font>
 Se trata de una especie de gancho accionado por un servo SG-90 que nos va a servir para apartar objetos detectado por el sensor HC-SR04 de nuestro camino. La idea es que el brazo estará normalmente replegado hacia las ruedas y que, cuando vamos siguiendo una línea o resolviendo un laberinto o simplemente desplazándonos con el robot y detectamos enfrente un objeto del tamaño de una lata de refresco, se accione el brazo para envolverlo, el robot realice un giro arrastrando el objeto fuera de su trayectoria, posteriormente deshaga el giro, retraiga el brazo y continue su camino. El aspecto del brazo en fase de diseño e impreso lo vemos en la imagen siguiente.
 
 <center>
@@ -38,7 +38,7 @@ En las imagenes siguientes vemos la plataforma superior con el brazo colocado.
 
 </center>
 
-## Interruptor, Placa UNO y driver motores
+## <FONT COLOR=#007575>**Interruptor, Placa UNO y driver motores**</font>
 Introducimos el interruptor en el orificio rectangular de la plataforma superior destinado para ello y ejerciendo un poco de presión lo encajamos en su lugar.
 
 | **P8. Placa UNO y driver motores** | Imágenes |
@@ -55,7 +55,7 @@ En la imagen siguiente vemos la plataforma superior en el estado actual.
 
 </center>
 
-## Ensamble de las dos plataformas
+## <FONT COLOR=#007575>**Ensamble de las dos plataformas**</font>
 
 | **P9. Ensamble de las dos plataformas** | Imágenes |
 |---|:-:|
@@ -71,7 +71,7 @@ En la imagen siguiente vemos las dos plataformas montadas.
 
 </center>
 
-## Sensores de ranura
+## <FONT COLOR=#007575>**Sensores de ranura**</font>
 El último paso a realizar es colocar los sensores de ranura sujetos a la plataforma superior y alineados con los discos ranurados de forma que estos giren libremente.
 <center>
 
@@ -91,7 +91,7 @@ En las imagenes siguientes vemos mas en detalle el aspecto de estos sensores mon
 
 </center>
 
-## Aspecto final del robot
+## <FONT COLOR=#007575>**Aspecto final del robot**</font>
 Una vez finalizado el montaje de todos los elementos el robot presenta, en fase de diseño, el aspecto que vemos en las imágenes siguientes.
 
 <center>

@@ -1,4 +1,4 @@
-# Materiales necesarios y ensamblado plataforma base
+# <FONT COLOR=#8B008B>Materiales necesarios y ensamblado plataforma base</font>
 
 ***
 
@@ -8,7 +8,7 @@ Las herramientas necesarias para llevar a cabo el proceso van a depender del tip
 
 Para los motores y el interruptor necesitaremos unos trozos de cable de distintos colores (rojo y negro a ser posible para distinguir bien la alimentación) de entre 10 y 15 cm de longitud. Estos cables irán directamente soldados a las patillas correspondientes de los motores y del interruptor. En el apartado correspondiente se detalla el proceso.
 
-## Motores, Portapilas e interruptor
+## <FONT COLOR=#007575>**Motores, Portapilas e interruptor**</font>
 
 | **P0. Motores** | Imágenes |
 |---|:-:|
@@ -23,7 +23,7 @@ Para los motores y el interruptor necesitaremos unos trozos de cable de distinto
 |---|:-:|
 | <br>Necesitamos:</br><br></br><br>- 1 mini interruptor basculante de 2 Pines tipo SPST de 10.5x15mm</br><br>- 2 trozos de hilos de diferentes colores, idealmente rojo y negro, para mantener el estándar de colores de alimentación<br></br><br>Debemos tener presente que con los cables soldados y la forma de colocación del interruptor (por presión en la plataforma superior) no podemos tener realizadas las conexiones a priori, es mas interesante realizar estas conexiones mediante, por ejemplo una clema, que permite un montaje cómodo y que podemos quitar si es necesario en el futuro.</br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen tenemos el interruptor preparado para la instalación --></FONT></P></br> | ![Portapilas con cables](../img/ensamble/i4.png) |
 
-## Plataforma base
+## <FONT COLOR=#007575>**Plataforma base**</font>
 En fase de diseño el aspecto de la plataforma base lo vemos en la imagen siguiente.
 
 <center>
@@ -48,7 +48,7 @@ En las imágenes siguientes vemos los pasos anteriores en fase de diseño
 
 </center>
 
-## Opción zumbador pasivo
+## <FONT COLOR=#007575>**Opción zumbador pasivo**</font>
 
 Podemos optar por colocar el zumbador pasivo en la plataforma base o bien colocarlo en la plataforma superior. A continuación vemos el aspecto de la pieza en fase de diseño.
 
@@ -72,7 +72,7 @@ En la imagen siguiente vemos la plataforma base con el soporte para zumbador col
 
 </center>
 
-## Ballcaster y porta sensores IR
+## <FONT COLOR=#007575>**Ballcaster y porta sensores IR**</font>
 En realidad esta pieza podría ser una solamente pero se ha dividido en dos para evitar el uso de soportes en la impresión. El aspecto en tiempo de diseño de ambas piezas lo vemos en las imagenes siguientes: 
 
 <center>
@@ -95,7 +95,7 @@ En la imagen siguiente vemos la plataforma base con el soporte para sensores de 
 
 </center>
 
-## Ruedas
+## <FONT COLOR=#007575>**Ruedas**</font>
 Nuestra propuesta va a incluir tres diseños que van a tener como diferencia el número y la posición de juntas tóricas. Las ruedas van a tener un radio exterior de 38 mm con una ranura que permite alojar una junta tórica de 75 mm de diámetro exterior y sección transversal de 3mm de diámetro. En la imagen siguiente vemos a la izquierda el modelo para dos juntas con separación de 10 mm entre ambas, en el centro la de una sola con la junta colocada y a la derecha tenemos el modelo de dos juntas sin distancia entre las mismas. Observamos como los diseños interiores de las ruedas son iguales en cuanto a geometría e indicaremos que el número y la posición de las juntas se establece para dar solución a las diferentes adherencias de superficies y evitar en lo posible que las ruedas derrapen cuando giran.
 
 <center>
@@ -120,7 +120,7 @@ En las imagenes siguientes vemos la plataforma base con cada tipo de ruedas en f
 
 </center>
 
-## Soporte para servo SG-90
+## <FONT COLOR=#007575>**Soporte para servo SG-90**</font>
 En esta pieza es donde colocamos y atornillamos el servo motor tanto para el brazo aparta objetos como para el sensor de ultrasonidos móvil. Si vamos a optar por la opción de ultrasonidos fijo solamente debemos montar un servo pero si optamos por la opción con sensor de ultrasonidos móvil debemos montar dos conjuntos.
 
 | **P5. Servo SG-90** | Imágenes |
@@ -137,7 +137,7 @@ En las imagenes siguientes vemos el soporte con el servo colocado.
 
 </center>
 
-## Soporte sensor de ultrasonidos HC-SR04
+## <FONT COLOR=#007575>**Soporte sensor de ultrasonidos HC-SR04**</font>
 Tenemos dos opciones disponibles, un soporte fijo que podemos colocar tanto en la parte superior del porta sensores IR o utilizando alguna de las ranuras de las plataformas superior o inferior, y un soporte móvil accionado por un servo pensado para colocarlo a modo de *cabeza giratoria* también en la parte superior del porta sensores de IR. En ambos casos el sensor se coloca presionando ligeramente para que encaje en las pestañas del porta sensores. En las imágenes siguientes tenemos ambos tipos de soportes tanto en modo diseño como impresos.
 
 <center>

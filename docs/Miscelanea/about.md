@@ -1,4 +1,4 @@
-# Autores
+# <FONT COLOR=#8B008B>Autores</font>
 
 Este proyecto es una colaboración entre distintos miembros de [Club Robotica Granada](https://clubroboticagranada.github.io/) y [Antonio Gómez García](https://serendipiaeditorial.com/robotica-con-arduino/).
 
