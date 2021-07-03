@@ -28,10 +28,10 @@ nav:
     - Ficheros: ficheros.md
     - Materiales necesarios y ensamblado plataforma base: ensamble.md
     - Materiales necesarios y ensamblado plataforma superior: ensamble-s.md
-  - Conexionado y pruebas:
-    - Análisis de elementos: conexionado-pruebas/elementos.md
-    - Conexionado: conexionado-pruebas/conex.md
-    - Pruebas básicas de funcionamiento: conexionado-pruebas/test.md
+  - Versión UNO. Conexionado y pruebas:
+    - Análisis de elementos: conexionado-pruebas/UNO/elementos.md
+    - Conexionado: conexionado-pruebas/UNO/conex.md
+    - Pruebas básicas de funcionamiento: conexionado-pruebas/UNO/test.md
   - Miscelanea:
     - Autores: Miscelanea/about.md
     - Licencias: Miscelanea/lic.md

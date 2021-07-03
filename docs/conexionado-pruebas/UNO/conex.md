@@ -1,5 +1,13 @@
 # <FONT COLOR=#8B008B>Conexionado de los distintos elementos</FONT>
-Describimos el conexionado que debemos realizar entre los distintos elementos, lo que haremos fundamentalmente en forma de gráfico o pinout.
+Describimos el conexionado que debemos realizar entre los distintos elementos, y lo haremos fundamentalmente en forma de gráfico y utilizando el pinout mostrado en la imagen siguiente. La fuente de esta imagen la tenemos en este [archivo svg](../../img/conexionado-pruebas/UNO/Masaylo-UNO-pinout.svg)
+
+<center>
+
+| Masaylo-CRG UNO pinout |
+|:|
+| ![Masaylo-CRG UNO pinout](../../img/conexionado-pruebas/UNO/Masaylo-UNO-pinout.png) |
+
+</center>
 
 ## <FONT COLOR=#007575>**Alimentación**</font>
 Antes de nada vamos a resolver las conexiones de alimentación de nuestra placa UNO y del driver de motores L298 junto con el portapilas y el interruptor. El resto de elementos se alimentarán directamente de la placa UNO. El conexionado es válido si sustituimos las cinco (o seis) pilas AA por dos baterías tipo 18650.
@@ -14,7 +22,7 @@ En la imagen siguiente tenemos el detalle de conexionado de la alimentación par
 
 | Conexionado de alimentación |
 |:-:|
-| ![](../img/conexionado-pruebas/Alimentacion.png) |
+| ![](../../img/conexionado-pruebas/UNO/Alimentacion.png) |
 
 </center>
 
@@ -29,6 +37,21 @@ Procedemos a conectar los motores en las bornas del driver L298 de forma que el 
 
 | Conexionado de motores |
 |:-:|
-| ![](../img/conexionado-pruebas/motores.png) |
+| ![](../../img/conexionado-pruebas/UNO/motores.png) |
 
 </center>
+
+## <FONT COLOR=#007575>**Zumbador**</font>
+Usamos el pin D1 o TxD y su Vcc asociado para conectarlo. En principio esta conexión no debe interferir en la grabación de programas en la placa que siempre se realiza utilizando los pines D0 y D1 de la placa, pero si nos da algún problema basta con que desconectemos el pin D0 del sensor en uno de sus extremos, procedamos a grabar el programa correspondiente y una vez cargado este volvemos a conectar el pin en su lugar.
+
+En la imagen siguiente observamos una pareja de cables, uno blanco que va al pin D1 y uno negro que va a GND.
+
+<center>
+
+| Conexionado del zumbador |
+|:-:|
+| ![](../../img/conexionado-pruebas/UNO/conex-zumbador.png) |
+
+</center>
+
+## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>

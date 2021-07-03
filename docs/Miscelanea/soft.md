@@ -19,3 +19,9 @@
 * Retoque de imágenes [GIMP](https://www.gimp.org/)
 
 * Creación de GIF animado a partir de video con [FFMPEG](https://www.ffmpeg.org/) y [GIMP](https://www.gimp.org/)
+
+* [IDE de Arduino](https://www.arduino.cc/en/software)
+
+* Masaylo Blockly
+
+* ArduinoBlocks
