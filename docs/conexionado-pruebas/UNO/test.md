@@ -70,7 +70,7 @@ El funcionamiento es muy similar al de la animación anterior pero a la mitad de
 ## <FONT COLOR=#007575>**Zumbador**</font>
 En esta ocasión vamos a programar el robot desde el IDE de Arduino, en concreto utilizando la versión 1.8.13 o posterior. Para la prueba del zumbador vamos a utilizar la información que podemos ver en la web de *Input makers* con el título [Programar melodía de Star Wars con Arduino y zumbador](https://inputmakers.com/componentes/melodia-de-star-wars-con-arduino-y-zumbador).
 
-El código que vamos a grabar en la placa lo vemos a continuación y basta con utilizar el botón copiar para seleccionarlo y ponerlo en el portapapeles desde el que lo podemos llevar al IDE de Arduino. Este botón se hace visible al pasar el cursor por el cuadro del código en la zona superior derecha del mismo. También puedes descargar el programa haciendo clic en el enlace []()
+El código que vamos a grabar en la placa lo vemos a continuación y basta con utilizar el botón copiar para seleccionarlo y ponerlo en el portapapeles desde el que lo podemos llevar al IDE de Arduino. Este botón se hace mas visible al pasar el cursor por el cuadro del código en la zona superior derecha del mismo. También puedes descargar el programa comprimido haciendo clic en el enlace [buzzer-star-wars](../UNO/tests/buzzer-star-wars.zip) que puedes descomprimir y utilizar a conveniencia.
 
 ~~~
 int pin = 1; // definimos el pin al que conectaremos el zumbador.
@@ -165,6 +165,6 @@ void loop() {
 }
 ~~~
 
-En el video [prueba del zumbador en Masaylo-CRG]() podemos escuchar el resultado de grabar el código anterior en el robot.
+En el video [prueba del zumbador en Masaylo-CRG](https://youtu.be/laqXu4w0ZEk) podemos escuchar el resultado de grabar el código anterior en el robot.
 
 ## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>
