@@ -42,7 +42,7 @@ Procedemos a conectar los motores en las bornas del driver L298 de forma que el 
 </center>
 
 ## <FONT COLOR=#007575>**Zumbador**</font>
-Usamos el pin D1 o TxD y su Vcc asociado para conectarlo. En principio esta conexión no debe interferir en la grabación de programas en la placa que siempre se realiza utilizando los pines D0 y D1 de la placa, pero si nos da algún problema basta con que desconectemos el pin D0 del sensor en uno de sus extremos, procedamos a grabar el programa correspondiente y una vez cargado este volvemos a conectar el pin en su lugar.
+Usamos el pin D1 o TxD y su Vcc asociado para conectarlo. En principio esta conexión no debe interferir en la grabación de programas en la placa que siempre se realiza utilizando los pines D0 y D1 de la placa, pero si nos da algún problema basta con que desconectemos el pin D0 del sensor en uno de sus extremos, procedamos a grabar el programa correspondiente y una vez cargado este volvemos a conectar el pin en su lugar. Si no queremos estar escuchando pitidos de manera continuada cuando subimos código a la placa o cuando usamos el monitor serie también debemos desconectar esta patilla.
 
 En la imagen siguiente observamos una pareja de cables, uno blanco que va al pin D1 y uno negro que va a GND.
 

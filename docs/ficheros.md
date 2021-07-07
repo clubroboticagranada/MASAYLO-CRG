@@ -1,6 +1,8 @@
 # <FONT COLOR=#8B008B>Ficheros</font>
 ***
-En este apartado se incluyen los enlaces a los archivos siguientes:
+En este apartado se incluyen los enlaces a los archivos originales de diseño, los archivos en formato stl y step.
+
+Para el caso de las ruedas se dan dos posibles soluciones, con la idea de suplir en lo posible la alta tolerancia de algunas impresoras. En concreto nos referimos al orificio para encajar el eje del motor. Para mayor claridad vamos a sacar los modelos de las tablas y los pondremos al final en un apartado concreto con su correspondiente explicación.
 
 ## <FONT COLOR=#007575>**Archivos fuente de diseño**</font>
 Creados con [FreeCAD](https://www.freecadweb.org/) que puedes modificar, cambiar según necesidades o utilizar para aprender el manejo de esta potente herramienta.
@@ -16,7 +18,6 @@ Creados con [FreeCAD](https://www.freecadweb.org/) que puedes modificar, cambiar
 | [plataforma-superior-src.FCStd](../img/3D/src/plataforma-superior-src.FCStd) | Para colocar cualquiera de las placas, el interruptor y sujetar el servo del brazo |
 | [base-servo-src.FCStd](../img/3D/src/base-servo-src.FCStd) | Pieza para sujetar un servo tipo SG90 |
 | [brazo-src.FCStd](../img/3D/src/brazo-src.FCStd) | Brazo aparta objetos con alojamiento para la pala del servo |
-| [ruedas.FCStd](../img/3D/src/ruedas.FCStd) | Rueda con una sola junta tórica y dos versiones para dos juntas, una con esta juntas y la otra separadas |
 | [separadores-src.FCStd](../img/3D/src/separadores-src.FCStd) | M3x5 para placa UNO y driver y M3x28 para unir plataformas base y superior |
 | [soporte-pruebas.FCStd](../img/3D/src/soporte-pruebas.FCStd) | Pieza pensada para poner encima el robot y poder hacer pruebas sin que este se mueva del sitio |
 | [disco-encoder.FCStd](../img/3D/src/disco-encoder.FCStd) | Disco de 23 mm de diámetro con 20 ranuras para acoplable a eje de motor para encoder optico |
@@ -63,5 +64,30 @@ En la tabla siguiente están los enlaces a estos dos tipos de ficheros.
 | ![Soporte HC04 fijo](../img/3D/imagenes/capturas/miniaturas/16a-opcion-ultrasonidos-fijo.png) | [ultrasonidos-fijo.stl](../img/3D/stl/ultrasonidos-fijo.stl) | [ultrasonidos-fijo.step](../img/3D/step/ultrasonidos-fijo.step) |
 | ![Soporte HC04 movil](../img/3D/imagenes/capturas/miniaturas/08b-soporte-ultras-pala-servo.png) | [ultrasonidos-movil.stl](../img/3D/stl/ultrasonidos-movil.stl) | [ultrasonidos-movil.step](../img/3D/step/ultrasonidos-movil.step) |
 | Todos los archivos en un zip | [Todos los stl en un zip](../img/3D/stl.zip) | [Todos los step en un zip](../img/3D/step.zip) |
+
+</center>
+
+## <FONT COLOR=#007575>**Ruedas: archivos de diseño, STL y STEP**</font>
+
+* **Archivos de diseño**
+
+<center>
+
+| Archivo | Comentarios |
+|---|---|
+| [ruedas.FCStd](../img/3D/src/ruedas.FCStd) | Rueda con una sola junta tórica y dos versiones para dos juntas, una con esta juntas y la otra separadas. Se trata del modelo con ajuste de precisión que debemos escoger siempre que dispongamos de una impresora de calidad |
+| [ruedas-hueco-eje-mayor.FCStd](../img/3D/src/ruedas-hueco-eje-mayor.FCStd) | Se trata del mismo modelo que el anterior pero con un hueco para el eje del motor de mayores dimensiones. Esta es la versión que debemos escoger si no disponemos de una impresora de calidad |
+
+</center>
+
+* **Archivos STL y STEP**
+
+<center>
+
+| Imagen | Archivo STL | Archivo STEP |
+|:-:|---|---|
+| ![Rueda una junta](../img/3D/imagenes/capturas/miniaturas/07a-ruedas.png) | [rueda-una-junta.stl](../img/3D/stl/rueda-una-junta.stl)<br>[rueda-una-junta-eje-motor-mayor.stl](../img/3D/stl/rueda-una-junta-eje-motor-mayor.stl)</br> | [rueda-una-junta.step](../img/3D/step/rueda-una-junta.step)<br>[rueda-una-junta-eje-motor-mayor.step](../img/3D/step/rueda-una-junta-eje-motor-mayor.step)</br> |
+| ![Rueda dos juntas](../img/3D/imagenes/capturas/miniaturas/07a-ruedas.png) | [rueda-dos-juntas.stl](../img/3D/stl/rueda-dos-juntas.stl)<br>[rueda-dos-juntas-eje-motor-mayor.stl](../img/3D/stl/rueda-dos-juntas-eje-motor-mayor.stl)</br> | [rueda-dos-juntas.step](../img/3D/step/rueda-dos-juntas.step)<br>[rueda-dos-juntas-eje-motor-mayor.step](../img/3D/step/rueda-dos-juntas-eje-motor-mayor.step)</br> |
+| ![Rueda dos juntas ancha](../img/3D/imagenes/capturas/miniaturas/07a-ruedas.png) | [rueda-dos-juntas-ancha.stl](../img/3D/stl/rueda-dos-juntas-ancha.stl)<br>[rueda-dos-juntas-ancha-eje-motor-mayor.stl](../img/3D/stl/rueda-dos-juntas-ancha-eje-motor-mayor.stl)</br> | [rueda-dos-juntas-ancha.step](../img/3D/step/rueda-dos-juntas-ancha.step)<br>[rueda-dos-juntas-ancha-eje-motor-mayor.step](../img/3D/step/rueda-dos-juntas-ancha-eje-motor-mayor.step)</br> |
 
 </center>

@@ -107,7 +107,7 @@ Normalmente no tienen polaridad, pero si está marcada en la carcasa o es distin
 El buzzer pasivo, a diferencia del activo, no tiene un oscilador interno y esto obliga a generar la frecuencia desde Arduino, para ello disponemos de la función [tone()](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/) que implementa el IDE.
 
 ## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>
-Hemos optado por poner al robot una pareja de sensores de reflexión fotoeléctrica con distancia de detección ajustable entre 2 y 30cm como el que vemos en la imagen siguiente, donde se indica el potenciometro de ajuste de distancia, el diodo emisor de IR y el fototransistor o detector de reflexión.
+Hemos optado por poner al robot una pareja de sensores de reflexión fotoeléctrica con distancia de detección ajustable entre 2 y 30cm, conocido como sensor de infrarrojos FC-51, como el que vemos en la imagen siguiente, donde se indica el potenciometro de ajuste de distancia, el diodo emisor de IR y el fototransistor o detector de reflexión.
 
 <center>
 
@@ -117,7 +117,20 @@ Hemos optado por poner al robot una pareja de sensores de reflexión fotoeléctr
 
 </center>
 
-Recordemos el funcionamiento básico del sistema. El LED infrarrojo emite luz infrarroja, o sea, de menor frecuencia (o mayor longitud de onda) que la nuestros ojos nos permiten ver, es decir, para nosotros es invisible. El sensor que hemos elegido funciona cuando esta luz choca contra una superficie negra que la reflejará reflejará y llegará al fototransistor. Existen muchas clases de sensores de este tipo y hemos escogido este por su amplio rango de ajuste y su posibilidad de montaje vertical. Utilizando un par de estos sensores podemos seguir una linea detectando si se sale a derecha o izquierda de la línea y redireccionarlo de nuevo a la linea.
+Recordemos el funcionamiento básico del sistema. El LED infrarrojo emite luz infrarroja, o sea, de menor frecuencia (o mayor longitud de onda) que la nuestros ojos nos permiten ver, es decir, para nosotros es invisible. El sensor que hemos elegido funciona cuando esta luz choca contra una superficie negra que la reflejará reflejará y llegará al fototransistor. Existen muchas clases de sensores de este tipo y hemos escogido este por su amplio rango de ajuste y su posibilidad de montaje vertical. Utilizando un par de estos sensores podemos seguir una linea detectando si se sale a derecha o izquierda de la línea y redireccionarlo de nuevo a la linea. 
 
+Este sensor tiene 3 pines de conexión, Vcc o 5V y GND para la alimentación y D0 u OUT como salida de señal que indicará si está llegando o no el reflejo del LED al fototransistor. En el esquema de la imagen siguiente se puede estudiar el funcionamiento electrónico de esta plaquita.
 
+<center>
 
+| Esquema sensor infrarrojos |
+|:-:|
+| ![](../../img/conexionado-pruebas/UNO/esquema-sensor-IR.png) |
+
+</center>
+
+El LM393 está configurado como comparador entre el nivel de tensión ajustado mediante VR1 que es entregado al terminal inversor y el nivel de entrada en el terminal no inversor, que va a depender de si el fototransistor recibe o no reflexión del infrarrojo emitido por el LED, si está recibiendo reflexión el fototransistor se encenderá el LED indicador de estado y tenemos el estado bajo o LOW en D0. Si no se recibe reflexión el LED no se iluminará y se envía un estado alto o HIGH a D0.
+
+Mediante el potenciómetro ajustamos la sensibilidad del fotorreceptor.
+
+## <FONT COLOR=#007575>**Servomotores**</font>
