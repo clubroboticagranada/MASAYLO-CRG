@@ -24,8 +24,9 @@ copyright: Copyright & copy; 2021 - 2030 Club Robotica Granada
 # 5. Navegación
 nav:
   - Introducción: index.md
-  - Materiales 3D:
-    - Ficheros: ficheros.md
+  - Materiales y Ficheros 3D:
+    - 3D alta precisión: ficheros.md
+    - 3D precisión media: ficheros-media.md
     - Materiales necesarios y ensamblado plataforma base: ensamble.md
     - Materiales necesarios y ensamblado plataforma superior: ensamble-s.md
   - Versión UNO. Conexionado y pruebas:

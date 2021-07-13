@@ -133,4 +133,65 @@ El LM393 está configurado como comparador entre el nivel de tensión ajustado m
 
 Mediante el potenciómetro ajustamos la sensibilidad del fotorreceptor.
 
+## <FONT COLOR=#007575>**Sensor de distancia HC-SR04**</font>
+El sensor genera y emite una serie de tonos de ultrasonidos a una frecuencia de 40 kHz (no perceptibles al oído humano) que si rebotan en una superficie vuelven y son captados por un micrófono receptor de ultrasonidos que incorpora el propio sensor. Midiendo el tiempo que tardan en volver los tonos enviados podemos calcular la distancia a la que se encuentra el objeto sobre el que han rebotado. El propio circuito realiza los cálculos necesarios para determinar la distancia que mas adelante veremos como se calcula. El sistema es similar al que usan algunos animales como ballenas, murciélagos y delfines, para localizar obstáculos y presas.
+
+El HC-SR04 es un sensor de distancia de baja precisión, en teoría con una rango de medición de 2cm a 400 cm, con una resolución de 0.3cm, pero en la práctica se limita a un rango entre 20cm y 2 metros.
+
+El aspecto del HC-SR04 es muy característico y se reconoce con facilidad porque tiene dos "ojos" que realmente son los dispositivos de emisión y recepción de ultrasonidos que integra este módulo, y es justo por esto por lo que hemos dotado al robot de una cabeza giratoria que en el funcionamiento parecerá que el robot mira a un lado y otro.
+
+En la imagen siguiente vemos el aspecto real del sensor y el principio de funcionamiento de forma gráfica.
+
+<center>
+
+| Aspecto del HC-SR04 y principio de funcionamiento |
+|:-:|
+| ![](../../img/conexionado-pruebas/UNO/HC-SR04-aspecto.png) |
+
+</center>
+
+Las características técnicas más relevantes del HC-SR04 son:
+
+* Dispone de 4 pines, dos son para alimentación (Vcc) y masa (GND), disparador (Trigger) y receptor (Echo). En la imagen siguiente se aprecian claramente como están distribuidos estos pines en el sensor.
+
+<center>
+
+| Pinout del HC-SR04 |
+|:-:|
+| ![](../../img/conexionado-pruebas/UNO/pinout-HC-SR04.png) |
+| Imagen basada en la publicada en [theengineeringprojects](https://www.theengineeringprojects.com/) |
+
+</center>
+
+* Alimentación: 5v
+* Frecuencia de ultrasonidos: 40 Khz
+* Consumos: en stand-by menor de 2mA y trabajando en torno a 15mA
+* Ángulo: menor de 15º
+
+Veamos ahora en que se basan los cálculos que realiza el sensor. En principio lo que hace, como ya se ha indicado, es contar el tiempo desde que se envia el pulso hasta que se recibe respuesta con lo que se puede determinar la distancia. Recordemos que:
+
+<center>
+
+$velocidad=\dfrac{espacio}{tiempo}\Rightarrow espacio=velocidad\cdot tiempo$
+
+</center>
+
+La velocidad es la del sonido es de 343 m/s a 20 ºC y un 50% de humedad relativa. A nosotros nos va a interesar expresar esta velocidad en cm/us, para lo que hacemos lo siguiente:
+
+<center>
+
+$343\dfrac{m}{s}\cdot 100\dfrac{cm}{m}\cdot \dfrac{1}{1000000}\dfrac{s}{\mu s}=0.0343\dfrac{cm}{\mu s}\Rightarrow espacio-ida=0.0343\cdot tiempo$
+
+</center>
+
+Es decir, el sonido tarda 0.0343 microsegundos en recorrer un centímetro, que será el tiempo que tarda el sonido en ir desde el amisor al objeto en el que rebota. Teniendo en cuenta que desde que se emite el pulso, rebota y es recibido el espacio recorrido será aproximadamente el doble que el calculado podemos expresar la distancia o espacio recorrido como:
+
+<center>
+
+$espacio=\dfrac{espacio-ida}{2}=0.01715\cdot tiempo$
+
+</center>
+
+Ecuación que nos permite saber la distancia a la que se encuentra un determinado objeto.
+
 ## <FONT COLOR=#007575>**Servomotores**</font>

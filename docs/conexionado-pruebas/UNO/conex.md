@@ -22,7 +22,7 @@ En la imagen siguiente tenemos el detalle de conexionado de la alimentación par
 
 | Conexionado de alimentación |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/Alimentacion.png) |
+| ![Conexionado de alimentación](../../img/conexionado-pruebas/UNO/Alimentacion.png) |
 
 </center>
 
@@ -37,12 +37,20 @@ Procedemos a conectar los motores en las bornas del driver L298 de forma que el 
 
 | Conexionado de motores |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/motores.png) |
+| ![Conexionado de motores](../../img/conexionado-pruebas/UNO/motores.png) |
 
 </center>
 
 ## <FONT COLOR=#007575>**Zumbador**</font>
-Usamos el pin D1 o TxD y su Vcc asociado para conectarlo. En principio esta conexión no debe interferir en la grabación de programas en la placa que siempre se realiza utilizando los pines D0 y D1 de la placa, pero si nos da algún problema basta con que desconectemos el pin D0 del sensor en uno de sus extremos, procedamos a grabar el programa correspondiente y una vez cargado este volvemos a conectar el pin en su lugar. Si no queremos estar escuchando pitidos de manera continuada cuando subimos código a la placa o cuando usamos el monitor serie también debemos desconectar esta patilla.
+Usamos el pin D1 o TxD y su Vcc asociado para conectarlo. En principio esta conexión no debe interferir en la grabación de programas en la placa que siempre se realiza utilizando los pines D0 y D1 de la placa, pero si nos da algún problema basta con que desconectemos el pin D0 del sensor en uno de sus extremos, procedamos a grabar el programa correspondiente y una vez cargado este volvemos a conectar el pin en su lugar. Si no queremos estar escuchando pitidos de manera continuada cuando subimos código a la placa o cuando usamos el monitor serie también debemos desconectar esta patilla. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+
+<center>
+
+| Conexionado de conjunto incluyendo zumbador |
+|:-:|
+| ![Conexionado de conjunto incluyendo zumbador](../../img/conexionado-pruebas/UNO/conex-con-buzzer.png) |
+
+</center>
 
 En la imagen siguiente observamos una pareja de cables, uno blanco que va al pin D1 y uno negro que va a GND.
 
@@ -50,8 +58,103 @@ En la imagen siguiente observamos una pareja de cables, uno blanco que va al pin
 
 | Conexionado del zumbador |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/conex-zumbador.png) |
+| ![Conexionado del zumbador](../../img/conexionado-pruebas/UNO/conex-zumbador.png) |
 
 </center>
 
+## <FONT COLOR=#007575>**Pines de entrada analógica**</font>
+Antes de conectar los sensores de infrarrojos, que irán a los pines analógicos (aunque su salida es digital), vamos a explicar como usar los pines analógicos como pines digitales en las placas Arduino. La explicación original en inglés la podemos encontrar en el [enlace "Analog Input Pins"](https://www.arduino.cc/en/Tutorial/Foundations/AnalogInputPins#.U0mLZ_l_tyU).
+
+**Convertidor A/D**
+
+Los controladores ATmega utilizados para Arduino contienen un convertidor de analógico a digital integrado de 6 canales (8 canales en el Mini y Nano y 16 en el Mega) con una resolución de 10 bits, devolviendo números enteros de 0 a 1023. Si bien la función principal de los pines analógicos para la mayoría de los usuarios es leer sensores analógicos, los pines analógicos también tienen toda la funcionalidad de los pines de entrada/salida de propósito general (GPIO) (lo mismo que los pines digitales 0-13).
+
+Por tanto, si necesitamos más pines de entrada y salida de propósito general, y todos los pines analógicos no están en uso, estos pueden usarse para GPIO.
+
+**Mapeo de pines**
+
+Los pines analógicos se pueden usar de manera idéntica a los pines digitales, usando los alias A0 (para la entrada analógica 0), A1, etc. Por ejemplo, el código para configurar el pin A0 como salida y poner en alto sería:
+
+~~~
+pinMode(A0, OUTPUT);
+digitalWrite(A0, HIGH);
+~~~
+
+**Resistencias de pull-up**
+
+Los pines analógicos también tienen resistencias pull-up, que funcionan de manera idéntica a las de los pines digitales. Se habilitan emitiendo un comando del tipo:
+
+`pinMode(A0, INPUT_PULLUP);  // set pull-up on analog pin 0`.
+
+Hay que tener en cuenta que activar un pull-up afectará a los valores entregados por `analogRead()`.
+
+**Advertencias**
+
+El comando `analogRead()` no funcionará correctamente si el pin lo hemos configurado previamente como salida. 
+Si hemos puesto el pin en estado alto estando configurado como salida, la resistencia de pull-up se configurará de nuevo cuando se vuelva a cambiar a entrada.
+
+La hoja de datos de ATmega advierte que el cambio de pines analógicos a digitales puede introducir [jitter o ruido no deseado](https://es.wikipedia.org/wiki/Jitter#:~:text=Se%20denomina%20jitter%20o%20fluctuaci%C3%B3n,se%C3%B1al%20de%20ruido%20no%20deseada.&text=El%20jitter%20es%20la%20primera%20consecuencia%20de%20un%20retraso%20de%20la%20se%C3%B1al.) en las lecturas analógicas del resto de pines. Se aconseja, después de poner los pines analógicos en modo digital, agregar un retardo corto antes de usar `analogRead()`.
+
 ## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>
+Una vez vista la explicación sobre pines analógicos utilizados como digitales diremos que vamos a conectar el sensor de infrarrojos izquierdo al pin A0 y el derecho al pin A1. Hay tener especial cuidado en que los pines marcados con VCC y GND se conecten a los pines V y G respectivamente de la placa UNO. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+
+<center>
+
+| Conexionado del conjunto incluyendo los sensores de infrarrojos  |
+|:-:|
+| ![Conexionado del conjunto incluyendo los sensores de infrarrojos](../../img/conexionado-pruebas/UNO/conex-con-sens-IR.png) |
+
+</center>
+
+En la imagen siguiente vemos el detalle de conexionado de los sensores de infrarrojos.
+
+<center>
+
+| Detalle del conexionado de los sensores de infrarrojos  |
+|:-:|
+| ![Detalle del conexionado de los sensores de infrarrojos](../../img/conexionado-pruebas/UNO/conex-IR.png) |
+
+</center>
+
+Una fotografía del detalle del conexionado en el robot la vemos a continuación.
+
+<center>
+
+| Fotografía del conexionado de los sensores de infrarrojos  |
+|:-:|
+| ![Fotografía del conexionado de los sensores de infrarrojos](../../img/conexionado-pruebas/UNO/conex-IR-foto.png) |
+
+</center>
+
+## <FONT COLOR=#007575>**Sensor de distancia HC-SR04**</font>
+De nuevo utilizamos dos pines analógicos como digitales por lo que debemos tener en cuenta lo referido anteriormente sobre el tema. Vamos a conectar el Trigger del sensor al pin A2 que deberemos configurar como salida y el pin Echo a A3 que deberemos configurar como entrada. En caso de utilizar MasayloBlockly o la librería descrita en este tutorial estas definiciones estarán ya realizadas. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+
+<center>
+
+| Conexionado del conjunto incluyendo el sensor de ultrasonidos HC-SR04 |
+|:-:|
+| ![Conexionado del conjunto incluyendo el sensor de ultrasonidos HC-SR04](../../img/conexionado-pruebas/UNO/conex-con-ultrasonidos.png) |
+
+</center>
+
+En la imagen siguiente vemos el detalle de conexionado del sensor de ultrasonidos HC-SR04.
+
+<center>
+
+| Detalle del conexionado del sensor de ultrasonidos HC-SR04 |
+|:-:|
+| ![Detalle del conexionado del sensor de ultrasonidos HC-SR04](../../img/conexionado-pruebas/UNO/conex-ultrasonidos.png) |
+
+</center>
+
+Una fotografía del detalle del conexionado en el robot la vemos a continuación.
+
+<center>
+
+| Fotografía del conexionado del sensor de ultrasonidos HC-SR04 |
+|:-:|
+| ![Fotografía del conexionado del sensor de ultrasonidos HC-SR04](../../img/conexionado-pruebas/UNO/conex-ultra-foto.png) |
+
+</center>
+
+## <FONT COLOR=#007575>**Servomotores**</font>

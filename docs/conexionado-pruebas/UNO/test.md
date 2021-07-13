@@ -168,3 +168,41 @@ void loop() {
 En el video [prueba del zumbador en Masaylo-CRG](https://youtu.be/laqXu4w0ZEk) podemos escuchar el resultado de grabar el código anterior en el robot.
 
 ## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>
+Para probar y ajustar los sensores de infrarrojos vamos a realizar un sencillo programa en MasayloBlockly como el que vemos en la imagen siguiente.
+
+<center>
+
+| Ejemplo para prueba de los sensores de infrarrojos |
+|:-:|
+| ![Ejemplo para prueba de los sensores de infrarrojos](../../img/conexionado-pruebas/UNO/test/firmw-test-sens-IR.png) |
+
+</center>
+
+Si es necesario retocaremos la posición del cursor del potenciometro de ajuste de sensibilidad teniendo en cuenta que es extremadamente sensible y que debemos dejarlo en una posición tal que al situar el sensor sobre una superficie negra el sensor onboard se apague y cuando lo sacamos del negro se encienda.
+
+El programa [sensores-IR.bloc](../UNO/tests/sensores-IR.bloc) es muy sencillo y simplemente comprueba si el sensor izquierdo está sobre negro estándo el derecho sobre blanco, si esta condición es cierta el LED onboard del UNO hará un parpadeo que repetirá dos veces de forma lenta y nos mostrará un mensaje en el monitor serie. Un proceso similar se realiza con el sensor derecho sobre negro siendo esta vez el parpadeo rápido y lo hará tres veces. Si ninguno de los sensores detecta negro mostrará el correspondiente mensaje permaneciendo el LED apagado. 
+
+En la imagen siguiente vemos el resultado que muestra el monitor serie al hacer que los sensores lean negro.
+
+<center>
+
+| Resultados obtenidos con el programa de prueba de los sensores de infrarrojos |
+|:-:|
+| ![Resultados obtenidos con el programa de prueba de los sensores de infrarrojos](../../img/conexionado-pruebas/UNO/test/monitor-serie-test-IR.png) |
+
+</center>
+
+## <FONT COLOR=#007575>**Sensor de distancia HC-SR04**</font>
+El datasheet del sensor nos indica que debemos generar un pulso de al menos 10us en el pin Trigger o disparador. Si queremos asegurar un trigger bueno podemos poner el pin a nivel bajo durante 4 o 5us antes de general el pulso en si. En código esto es algo como lo siguiente:
+
+~~~
+digitalWrite(Pin_Trigger, LOW);  
+delayMicroseconds(5);
+digitalWrite(Pin_Trigger, HIGH); 
+delayMicroseconds(10);
+digitalWrite(Pin_Trigger, LOW);
+~~~
+
+Ver el ejemplo de medir distancia de blockly y comentar lo de A2 y A3
+
+## <FONT COLOR=#007575>**Servomotores**</font>

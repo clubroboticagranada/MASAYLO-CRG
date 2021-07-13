@@ -1,0 +1,154 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_6</toolbox>
+  <block type="masaylo_arranca" id="ZVTL{DLE9PgiXl4jT:?J" x="176" y="48">
+    <next>
+      <block type="masaylo_IR_INIT" id=")(%e|YCy*RS-xQT`NGhQ">
+        <field name="IRLeft">14</field>
+        <field name="IRRight">15</field>
+        <next>
+          <block type="controls_if" id="kU9|pHp9}IPTa6[ogKb^">
+            <mutation elseif="1" else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_operation" id="FEzDDiS!X[R0l7f|Q%t|">
+                <field name="OP">and</field>
+                <value name="A">
+                  <block type="masaylo_blackleft" id="#VMP!u;PV`U?9=5,77v:"></block>
+                </value>
+                <value name="B">
+                  <block type="masaylo_blankright" id="G3`VE}CDhYuL^J826L9P"></block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_repeat_ext" id="-bvM:yWN~gw:dK:PWsrN">
+                <comment pinned="true" h="35" w="141">Parpadeo lento</comment>
+                <value name="TIMES">
+                  <shadow type="math_number" id="C7uA$wds0`wKQH~73!0e">
+                    <field name="NUM">2</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="inout_buildin_led" id="+{#|#Nu:il39|}BiefVb">
+                    <field name="STAT">HIGH</field>
+                    <next>
+                      <block type="base_delay" id="NAg/NwF2RM-[/_y,cTDX">
+                        <field name="unite">s</field>
+                        <value name="DELAY_TIME">
+                          <shadow type="math_number" id="Dl6l+7M[A_)fZV,9dpv4">
+                            <field name="NUM">2</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="inout_buildin_led" id="Zv{Xp`s2M!`E3BF@AM~5">
+                            <field name="STAT">LOW</field>
+                            <next>
+                              <block type="serial_write_line" id="e^EDaT9{,4_2lN9eicUa">
+                                <value name="CONTENT">
+                                  <shadow type="text" id="ZGC_@^Cy=4vmV[*|b}Kd">
+                                    <field name="TEXT">Detectado negro con sensor IZQUIERDO</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_operation" id="DG@Tt%M%*v;4g*r,Ig+*">
+                <field name="OP">and</field>
+                <value name="A">
+                  <block type="masaylo_blankleft" id="=SF#,Mz+-7CK}!-[J]$K"></block>
+                </value>
+                <value name="B">
+                  <block type="masaylo_blackright" id="V}21f(i@pyZjXTm!(fHz"></block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="controls_repeat_ext" id="C@;#SUM/KZAxZRPkH$+U">
+                <comment pinned="true" h="40" w="130">Parpadeo rápido</comment>
+                <value name="TIMES">
+                  <shadow type="math_number" id="i;e)g%W$[.u:YiW3]Vcu">
+                    <field name="NUM">3</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="inout_buildin_led" id="wV3X2dXJRp=;0EKMIolf">
+                    <field name="STAT">HIGH</field>
+                    <next>
+                      <block type="base_delay" id="+9R{BVao#ahygse1zH=R">
+                        <field name="unite">m</field>
+                        <value name="DELAY_TIME">
+                          <shadow type="math_number" id="ZFFyMS0ymkC2YRVX;oPT">
+                            <field name="NUM">500</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="inout_buildin_led" id=",uNm/6j[+NM_rli{q|pb">
+                            <field name="STAT">LOW</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="serial_write_line" id="P!!;p.}2+DC}.x|ej.C`">
+                    <value name="CONTENT">
+                      <shadow type="text" id="xQ:#VSbZJ{[.0]aRxRN,">
+                        <field name="TEXT">Detectado negro con sensor DERECHO</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_if" id="zhXw9yi8{zWw4yH5LF7p">
+                <value name="IF0">
+                  <block type="logic_operation" id=";[a]1oEA$(H-.eQK.GQl">
+                    <field name="OP">and</field>
+                    <value name="A">
+                      <block type="masaylo_blankleft" id="h];Q{X)ENIr=OQZNn8bi"></block>
+                    </value>
+                    <value name="B">
+                      <block type="masaylo_blankright" id="rrPxpn:ML/iWb4r#9+JF"></block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="serial_write_line" id="DUEJ%D9]06:@=XxI=17G">
+                    <value name="CONTENT">
+                      <shadow type="text" id="Oq=Nw:wn${s|(6C23e%3">
+                        <field name="TEXT">NEGRO no detectado</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <next>
+              <block type="base_delay" id="c)c9:943j9L6%q7IoB6C">
+                <field name="unite">s</field>
+                <value name="DELAY_TIME">
+                  <shadow type="math_number" id="`V/-+e0O[rew:k78@B_z">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="serial_init" id="yOLo!pcZ{+PQ#;hHHE,[" x="556" y="56">
+    <field name="pin">0</field>
+    <field name="SPEED">9600</field>
+  </block>
+</xml>
