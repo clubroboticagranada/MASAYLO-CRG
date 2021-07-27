@@ -23,7 +23,7 @@ Creados con [FreeCAD](https://www.freecadweb.org/) que puedes modificar, cambiar
 | [brazo-src.FCStd](../img/3D/src/brazo-src.FCStd) | Brazo aparta objetos con alojamiento para la pala del servo |
 | [separadores-src.FCStd](../img/3D/src/separadores-src.FCStd) | M3x5 para placa UNO y driver y M3x28 para unir plataformas base y superior |
 | [soporte-pruebas.FCStd](../img/3D/src/soporte-pruebas.FCStd) | Pieza pensada para poner encima el robot y poder hacer pruebas sin que este se mueva del sitio |
-| [disco-encoder.FCStd](../img/3D/src/disco-encoder.FCStd) | Disco de 23 mm de diámetro con 20 ranuras para acoplable a eje de motor para encoder optico |
+| [disco-encoder.FCStd](../img/3D/src/disco-encoder.FCStd) | Disco de 23 mm de diámetro con 20 ranuras acoplable a eje de motor para encoder optico |
 | [conjunto-src.FCStd](../img/3D/src/conjunto-src.FCStd) | Muestra la colocación de los distintos elementos en fase de diseño |
 | [Todo en un archivo zip](../img/3D/src.zip) | Para descargar todos los archivos en un clic |
 

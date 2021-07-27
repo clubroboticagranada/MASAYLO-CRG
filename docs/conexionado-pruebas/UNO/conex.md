@@ -158,3 +158,63 @@ Una fotografía del detalle del conexionado en el robot la vemos a continuación
 </center>
 
 ## <FONT COLOR=#007575>**Servomotores**</font>
+En este caso los pines que utilizaremos son los digitales 4 y 5, el primero para el brazo y el segundo para la cabeza. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+
+<center>
+
+| Conexionado del conjunto incluyendo los servos de brazo y cabeza |
+|:-:|
+| ![Conexionado del conjunto incluyendo los servos de brazo y cabeza](../../img/conexionado-pruebas/UNO/conex-con-servos.png) |
+
+</center>
+
+En la imagen siguiente vemos el detalle de conexionado de los dos servos SG90.
+
+<center>
+
+| Detalle del conexionado de los servos de brazo y cabeza |
+|:-:|
+| ![Detalle del conexionado de los servos de brazo y cabeza](../../img/conexionado-pruebas/UNO/conex-servos.png) |
+
+</center>
+
+Una fotografía del detalle del conexionado en el robot la vemos a continuación.
+
+<center>
+
+| Fotografía del conexionado de los servos de brazo y cabeza |
+|:-:|
+| ![Fotografía del conexionado de los servos de brazo y cabeza](../../img/conexionado-pruebas/UNO/conex-servos-foto.png) |
+
+</center>
+
+## <FONT COLOR=#007575>**Encoder infrarrojos FC-03**</font>
+En este caso los pines que utilizaremos son los digitales 2 y 3, que son los pines que admiten interrupciones en las placas tipo UNO, Nano, Mega, Mini y Leonardo. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+
+<center>
+
+| Conexionado del conjunto incluyendo los encoders |
+|:-:|
+| ![Conexionado del conjunto incluyendo los encoders](../../img/conexionado-pruebas/UNO/conex-con-encoders.png) |
+
+</center>
+
+En la imagen siguiente vemos el detalle de conexionado de los dos encoder FC-03.
+
+<center>
+
+| Detalle del conexionado de los encoder FC-03 |
+|:-:|
+| ![Detalle del conexionado de los encoder FC-03](../../img/conexionado-pruebas/UNO/conex-encoders.png) |
+
+</center>
+
+Una fotografía del detalle del conexionado en el robot la vemos a continuación.
+
+<center>
+
+| Fotografía del conexionado de los encoder FC-03 |
+|:-:|
+| ![Fotografía del conexionado de los encoder FC-03](../../img/conexionado-pruebas/UNO/conex-encoders-foto.png) |
+
+</center>

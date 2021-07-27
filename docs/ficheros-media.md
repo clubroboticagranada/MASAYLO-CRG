@@ -11,6 +11,7 @@ Creados con [FreeCAD](https://www.freecadweb.org/) que puedes modificar, cambiar
 | Archivo | Comentarios |
 |---|---|
 | [ruedas](../img/3D-media-precision/src/ruedas-hueco-eje-mayor.FCStd) | Rueda con una sola junta tórica y dos versiones para dos juntas, una con esta juntas y la otra separadas. |
+| [soporte-ballcaster-media.FCStd](../img/3D/src/soporte-sensores-IR-ballcaster.FCStd) | Solamente contiene la pieza del ballcaster. El soporte de los sensores verticales de IR es el mismo que en alta precisión |
 
 </center>
 
@@ -38,5 +39,5 @@ En la tabla siguiente están los enlaces a estos dos tipos de ficheros.
 | ![Rueda una junta](../img/3D/imagenes/capturas/miniaturas/07a-ruedas.png) | [rueda-una-junta.stl](../img/3D-media-precision/stl/rueda-una-junta-eje-motor-mayor.stl) | [rueda-una-junta.step](../img/3D-media-precision/step/rueda-una-junta-eje-motor-mayor.step) |
 | ![Rueda dos juntas](../img/3D/imagenes/capturas/miniaturas/07a-ruedas.png) | [rueda-dos-juntas.stl](../img/3D-media-precision/stl/rueda-dos-juntas-eje-motor-mayor.stl) | [rueda-dos-juntas.step](../img/3D-media-precision/step/rueda-dos-juntas-eje-motor-mayor.step) |
 | ![Rueda dos juntas ancha](../img/3D/imagenes/capturas/miniaturas/07a-ruedas.png) | [rueda-dos-juntas-ancha.stl](../img/3D-media-precision/stl/rueda-dos-juntas-ancha-eje-motor-mayor.stl) | [rueda-dos-juntas-ancha.step](../img/3D-media-precision/step/rueda-dos-juntas-ancha-eje-motor-mayor.step) |
-
+| ![Ballcaster precisión media](../img/3D/imagenes/capturas/miniaturas/06a-ballcaster.png) | [soporte-ballcaster-media.stl](../img/3D-media-precision/stl/soporte-ballcaster-media.stl) | [soporte-ballcaster-media.step](../img/3D-media-precision/step/soporte-ballcaster-media.step) |
 </center>

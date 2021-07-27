@@ -6,3 +6,4 @@
 
 * [Wiki de Keyestudio](https://wiki.keyestudio.com/Ks0172_keyestudio_UNO_with_Pin_Header_Interface)
 
+* [Blog de Luis Llamas](https://www.luisllamas.es/)

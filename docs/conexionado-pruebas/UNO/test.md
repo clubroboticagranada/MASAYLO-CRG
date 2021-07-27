@@ -193,16 +193,250 @@ En la imagen siguiente vemos el resultado que muestra el monitor serie al hacer 
 </center>
 
 ## <FONT COLOR=#007575>**Sensor de distancia HC-SR04**</font>
-El datasheet del sensor nos indica que debemos generar un pulso de al menos 10us en el pin Trigger o disparador. Si queremos asegurar un trigger bueno podemos poner el pin a nivel bajo durante 4 o 5us antes de general el pulso en si. En código esto es algo como lo siguiente:
+El datasheet del sensor nos indica que debemos generar un pulso de al menos 10us en el pin Trigger o disparador. Si queremos asegurar un trigger bueno podemos poner el pin a nivel bajo durante 4us antes de general el pulso en si. En código esto es algo como lo siguiente:
 
 ~~~
 digitalWrite(Pin_Trigger, LOW);  
-delayMicroseconds(5);
+delayMicroseconds(4);
 digitalWrite(Pin_Trigger, HIGH); 
 delayMicroseconds(10);
 digitalWrite(Pin_Trigger, LOW);
 ~~~
 
-Ver el ejemplo de medir distancia de blockly y comentar lo de A2 y A3
+Este código ya está implementado en la librería que se describe en estas notas y, por supuesto lo está en Masaylo Blockly por lo que no debemos preocuparnos por ello.
+
+En este caso como ejemplo vamos a utilizar el que viene con la versión 1.1.4 de Masaylo Blockly titulado "Envía la distancia al obstáculo detectado al puerto serie de tu ordenador" y que podemos ver cargado en la imagen siguiente.
+
+<center>
+
+| Ejemplo "Envía la distancia al obstáculo detectado al puerto serie de tu ordenador" |
+|:-:|
+| ![Ejemplo "Envía la distancia al obstáculo detectado al puerto serie de tu ordenador"](../../img/conexionado-pruebas/UNO/test/HC-SR04-pines-numero.png) |
+
+</center>
+
+En la imagen siguiente vemos este mismo ejemplo con la definición de pines que se da en el pinout.
+
+<center>
+
+| Ejemplo "Envía la distancia al obstáculo detectado al puerto serie de tu ordenador" con A2 y A3 |
+|:-:|
+| ![Ejemplo "Envía la distancia al obstáculo detectado al puerto serie de tu ordenador" con A2 y A3](../../img/conexionado-pruebas/UNO/test/HC-SR04-pines-letras.png) |
+
+</center>
+
+Se puede utilizar una u otra nomenclatura de forma indiferente y en cualquier caso lo que hace el ejemplo es enviarnos al puerto serie la distancia en centímetros que está midiendo el sensor una vez por segundo.
+
+En la imagen siguiente vemos una ventana con resultados de diferentes distancias medidas por el sensor.
+
+<center>
+
+| Ejemplo "Envía la distancia al obstáculo detectado al puerto serie de tu ordenador" resultados |
+|:-:|
+| ![Ejemplo "Envía la distancia al obstáculo detectado al puerto serie de tu ordenador" resultados](../../img/conexionado-pruebas/UNO/test/HC-SR04-resultado.png) |
+
+</center>
 
 ## <FONT COLOR=#007575>**Servomotores**</font>
+En nuestro caso el robot va dotado de dos servos SG90, uno para accionar el brazo aparta obstáculos y el otro para accionar la cabeza y que el robot "mire" a un lado y otro. Para ambos servos vamos a crear unos programas muy simples que nos sirvan para verificar su funcionamiento.
+
+* **Prueba de funcionamiento del servo de cabeza**. Implementamos, o [descargamos](../UNO/tests/test-cabeza.bloc) el programa que vemos en la imagen siguiente:
+
+<center>
+
+| Ejemplo básico de funcionamiento del servo de cabeza |
+|:-:|
+| ![Ejemplo básico de funcionamiento del servo de cabeza](../../img/conexionado-pruebas/UNO/test/demo-cabeza.png) |
+
+</center>
+
+En los ejemplos que acompañan a la librería y que se incluyen en Masaylo Blockly encontramos otras muchas funcionalidades de este servo.
+
+En la animación siguiente vemos el resultado de programar el robot con el ejemplo anterior y como realiza movimientos de izquierda a derecha pasando por la posición central o mirar al frente.
+
+<center>
+
+| Animación del ejemplo básico de funcionamiento del servo de cabeza |
+|:-:|
+| ![Animación del ejemplo básico de funcionamiento del servo de cabeza](../../img/conexionado-pruebas/UNO/test/demo-cabeza.gif) |
+
+</center>
+
+* **Prueba de funcionamiento del servo del brazo**. 
+
+En el caso del brazo hay que tener en cuenta que, si posicionamos la placa UNO como hemos ido viendo en las distintas imágenes, al grabar este programa (o cualquier otro que trabaje con el servo del brazo) y mientras mantegamos conectado el cable USB, este va a molestar a los movimientos del brazo porque chocará con el mismo. Las opciones que tenemos para evitar que esto ocurra son:
+
+- girar la placa UNO 180º sobre la posición indicada hasta ahora
+- retirar el brazo en tanto trabajamos con la conexión USB y colocarlo en el robot para su funcionamiento autónomo
+- colocar el servo junto con el brazo en el otro costado del robot
+
+En la imagen siguiente vemos el robot con el servo cambiado de costado.
+
+<center>
+
+| Servo del brazo posicionado a la izquierda |
+|:-:|
+| ![Servo del brazo posicionado a la izquierda](../../img/conexionado-pruebas/UNO/servo-brazo-izda.png) |
+
+</center>
+
+Implementamos, o [descargamos](../UNO/tests/test-brazo.bloc) el programa que vemos en la imagen siguiente:
+
+<center>
+
+| Ejemplo básico de funcionamiento del servo del brazo |
+|:-:|
+| ![Ejemplo básico de funcionamiento del servo del brazo](../../img/conexionado-pruebas/UNO/test/demo-brazo.png) |
+
+</center>
+
+En los ejemplos que acompañan a la librería y que se incluyen en Masaylo Blockly encontramos otras muchas funcionalidades de este servo.
+
+En la animación siguiente vemos el resultado de programar el robot con un ejemplo en el que el brazo está colocado en el costado derecho y como realiza movimientos de posicionado del brazo envolviendo al objeto que supuestamente habría delante y retracción del brazo a su posición de replegado pasando por la posición central o posición vertical del brazo.
+
+<center>
+
+| Animación del ejemplo básico de funcionamiento del servo del brazo |
+|:-:|
+| ![Animación del ejemplo básico de funcionamiento del servo del brazo](../../img/conexionado-pruebas/UNO/test/demo-brazo.gif) |
+
+</center>
+
+## <FONT COLOR=#007575>**Encoder infrarrojos FC-03**</font>
+Para probar el funcionamiento de los encoders vamos a recurrir de nuevo al IDE 1.8.15 de Arduino montando dos ejemplos totalmente similares pero probando cada encoder por separado. Estos ejemplos están inspirados en la implementación que se hace de los mismos en el [robot Andromina OFF ROAD](https://androminarobot.blogspot.com.es/2014/04/andromina-y-mando-distancia.html) y los detalles analizados en el [blog Andromina robot V.2.0](http://androminarobot.blogspot.com/2016/07/en-este-tutorial-mostramos-como-usar-el.html)  Posteriormente podremos probar distintos ejemplos integrados en la librería que lógicamente utilizarán ambos encoders simultáneamente.
+
+* **Encoder izquierdo**
+
+A continuación vemos el código comentado de la prueba que vamos a realizar y que puedes [descargar](../UNO/tests/test-encoder-izdo.zip) o copiar para grabarlo en tu robot y así comprobar que el encoder izquierdo funciona correctamente.
+
+~~~
+const int pwm_izdo = 6; //pines y variables motor y encoder izquierdo 
+const int IN1 = 7;
+const int IN2 = 8;
+int encoder_izdo = 2;     
+unsigned int rpm_izdo = 0;
+float vel_izdo = 0; //en Km/h
+volatile byte pulsos_leidos = 0; // Número de pulsos leidos en un segundo
+unsigned long tiempo_anterior = 0;  // Tiempo 
+unsigned int muescas = 20; //número de muescas del disco del encoder.
+const int diametro_rueda = 75; //Diámetro de las ruedas en mm
+static volatile unsigned long debounce = 0; //Tiempo del rebote.
+void setup(){
+  pinMode(pwm_izdo,OUTPUT);
+  pinMode(IN1,OUTPUT); 
+  pinMode(IN2,OUTPUT);
+  Serial.begin(9600); 
+  pinMode(encoder_izdo, INPUT);
+  attachInterrupt(0, contador, RISING); //Configuración de la interrupción 0 
+  pulsos_leidos = 0;
+  rpm_izdo = 0;
+  tiempo_anterior = 0;
+  Serial.println("MOTOR IZQUIERDO:");
+  Serial.print("Segundos - ");
+  Serial.print("RPM - ");
+  Serial.print("Pulsos leidos - ");
+  Serial.println("Velocidad (Km/h)");
+  Serial.println("========   ===   =============   ================");
+}
+ void loop(){
+  if (millis() - tiempo_anterior >= 1000){  //Se actualiza cada segundo
+    noInterrupts(); // Desconectamos la interrupción para que no actué en esta parte del programa.
+    digitalWrite(IN1,HIGH);
+    digitalWrite(IN2,LOW);
+    analogWrite(pwm_izdo,255); //a máxima velocidad
+    rpm_izdo = (60 * 1000 / muescas )/ (millis() - tiempo_anterior)* pulsos_leidos; //Cálculo de las revoluciones por minuto
+    vel_izdo = rpm_izdo * 3.1416 * diametro_rueda * 60 / 1000000; //Cálculo de la vel_izdo en Km/h 
+    tiempo_anterior = millis(); //Almacenamos el tiempo actual.
+    Serial.print("   "); Serial.print(millis()/1000); Serial.print("       ");
+    Serial.print(rpm_izdo,DEC); Serial.print("       ");
+    Serial.print(pulsos_leidos,DEC); Serial.print("               ");
+    Serial.println(vel_izdo,2); 
+    pulsos_leidos = 0;  //Inicializamos los pulsos
+    interrupts(); //Reiniciamos la interrupción
+  }
+}
+//La función contador se encarga de contar los pulsos buenos
+void contador(){
+  if(digitalRead(encoder_izdo) && (micros()-debounce > 500) && digitalRead (encoder_izdo)){ 
+    debounce = micros(); //para comprobar que no contamos rebotes 
+    pulsos_leidos++;}  //Cuen ta el pulso como bueno
+} 
+~~~
+
+En la imagen siguiente tenemos una captura del terminal serie con los resultados para el encoder izquierdo.
+
+<center>
+
+| Resultados del ejemplo básico para prueba del encoder izquierdo |
+|:-:|
+| ![Resultados del ejemplo básico para prueba del encoder izquierdo](../../img/conexionado-pruebas/UNO/test/test-encoder-izdo.png) |
+
+</center>
+
+* **Encoder derecho**
+
+A continuación vemos el código comentado de la prueba que vamos a realizar y que puedes [descargar](../UNO/tests/test-encoder-dcho.zip) o copiar para grabarlo en tu robot y así comprobar que el encoder derecho funciona correctamente.
+
+~~~
+const int pwm_dcho = 11; //pines y variables motor y encoder derecho 
+const int IN3 = 12;
+const int IN4 = 13;
+int encoder_dcho = 3;     
+unsigned int rpm_dcho = 0;
+float vel_dcho = 0; //en Km/h
+volatile byte pulsos_leidos = 0; // Número de pulsos leidos en un segundo
+unsigned long tiempo_anterior = 0;  // Tiempo 
+unsigned int muescas = 20; //número de muescas del disco del encoder.
+const int diametro_rueda = 75; //Diámetro de las ruedas en mm
+static volatile unsigned long debounce = 0; //Tiempo del rebote.
+void setup(){
+  pinMode(pwm_dcho,OUTPUT);
+  pinMode(IN3,OUTPUT); 
+  pinMode(IN4,OUTPUT);
+  Serial.begin(9600); 
+  pinMode(encoder_dcho, INPUT);
+  attachInterrupt(1, contador, RISING); //Configuración de la interrupción 1
+  pulsos_leidos = 0;
+  rpm_dcho = 0;
+  tiempo_anterior = 0;
+  Serial.println("MOTOR DERECHO:");
+  Serial.print("Segundos - ");
+  Serial.print("RPM - ");
+  Serial.print("Pulsos leidos - ");
+  Serial.println("Velocidad (Km/h)");
+  Serial.println("========   ===   =============   ================");
+}
+ void loop(){
+  if (millis() - tiempo_anterior >= 1000){  //Se actualiza cada segundo
+    noInterrupts(); // Desconectamos la interrupción para que no actué en esta parte del programa.
+    digitalWrite(IN3,HIGH);
+    digitalWrite(IN4,LOW);
+    analogWrite(pwm_dcho,255); //a máxima velocidad
+    rpm_dcho = (60 * 1000 / muescas )/ (millis() - tiempo_anterior)* pulsos_leidos; //Cálculo de las revoluciones por minuto
+    vel_dcho = rpm_dcho * 3.1416 * diametro_rueda * 60 / 1000000; //Cálculo de la vel_dcho en Km/h 
+    tiempo_anterior = millis(); //Almacenamos el tiempo actual.
+    Serial.print("   "); Serial.print(millis()/1000); Serial.print("       ");
+    Serial.print(rpm_dcho,DEC); Serial.print("       ");
+    Serial.print(pulsos_leidos,DEC); Serial.print("               ");
+    Serial.println(vel_dcho,2); 
+    pulsos_leidos = 0;  //Inicializamos los pulsos
+    interrupts(); //Reiniciamos la interrupción
+  }
+}
+//La función contador se encarga de contar los pulsos buenos
+void contador(){
+  if(digitalRead(encoder_dcho) && (micros()-debounce > 500) && digitalRead (encoder_dcho)){ 
+    debounce = micros(); //para comprobar que no contamos rebotes 
+    pulsos_leidos++;}  //Cuen ta el pulso como bueno
+} 
+~~~
+
+En la imagen siguiente tenemos una captura del terminal serie con los resultados para el encoder derecho.
+
+<center>
+
+| Resultados del ejemplo básico para prueba del encoder derecho |
+|:-:|
+| ![Resultados del ejemplo básico para prueba del encoder derecho](../../img/conexionado-pruebas/UNO/test/test-encoder-dcho.png) |
+
+</center>

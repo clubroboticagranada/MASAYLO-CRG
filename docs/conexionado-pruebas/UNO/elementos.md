@@ -8,7 +8,7 @@ Se trata de la placa [Ks0172](https://wiki.keyestudio.com/Ks0172_keyestudio_UNO_
 
 | Placa Keyestudio UNO Ks0172 |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/uno.png) |
+| ![Placa Keyestudio UNO Ks0172](../../img/conexionado-pruebas/UNO/uno.png) |
 
 </center>
 
@@ -22,7 +22,7 @@ También es importante tener disponible un gráfico con la funcionalidad de cada
 
 | Pinout de la Placa Keyestudio UNO Ks0172 |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/pinout-UNO.png) |
+| ![Pinout de la Placa Keyestudio UNO Ks0172](../../img/conexionado-pruebas/UNO/pinout-UNO.png) |
 
 </center>
 
@@ -33,7 +33,7 @@ Esta placa está basada en el chip L298N y permite controlar la velocidad y el s
 
 | Placa L298 |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/L298.png) |
+| ![Placa L298](../../img/conexionado-pruebas/UNO/L298.png) |
 
 </center>
 
@@ -85,7 +85,7 @@ El aspecto físico de estos motores lo vemos en la imagen siguiente.
 
 | Motores DC 3 a 6V |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/motorDC.png) |
+| ![ Motores DC 3 a 6V](../../img/conexionado-pruebas/UNO/motorDC.png) |
 
 </center>
 
@@ -96,7 +96,7 @@ Si queremos reproducir sonidos de forma sencilla y económica debemos sutilizar 
 
 | Zumbador pasivo |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/zumbador.png) |
+| ![ Zumbador pasivo ](../../img/conexionado-pruebas/UNO/zumbador.png) |
 
 </center>
 
@@ -113,7 +113,7 @@ Hemos optado por poner al robot una pareja de sensores de reflexión fotoeléctr
 
 | Modelo de sensor IR escogido |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/sensor-IR.png) |
+| ![Modelo de sensor IR escogido](../../img/conexionado-pruebas/UNO/sensor-IR.png) |
 
 </center>
 
@@ -125,7 +125,7 @@ Este sensor tiene 3 pines de conexión, Vcc o 5V y GND para la alimentación y D
 
 | Esquema sensor infrarrojos |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/esquema-sensor-IR.png) |
+| ![Esquema sensor infrarrojos](../../img/conexionado-pruebas/UNO/esquema-sensor-IR.png) |
 
 </center>
 
@@ -146,7 +146,7 @@ En la imagen siguiente vemos el aspecto real del sensor y el principio de funcio
 
 | Aspecto del HC-SR04 y principio de funcionamiento |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/HC-SR04-aspecto.png) |
+| ![Aspecto del HC-SR04 y principio de funcionamiento](../../img/conexionado-pruebas/UNO/HC-SR04-aspecto.png) |
 
 </center>
 
@@ -158,7 +158,7 @@ Las características técnicas más relevantes del HC-SR04 son:
 
 | Pinout del HC-SR04 |
 |:-:|
-| ![](../../img/conexionado-pruebas/UNO/pinout-HC-SR04.png) |
+| ![Pinout del HC-SR04](../../img/conexionado-pruebas/UNO/pinout-HC-SR04.png) |
 | Imagen basada en la publicada en [theengineeringprojects](https://www.theengineeringprojects.com/) |
 
 </center>
@@ -195,3 +195,97 @@ $espacio=\dfrac{espacio-ida}{2}=0.01715\cdot tiempo$
 Ecuación que nos permite saber la distancia a la que se encuentra un determinado objeto.
 
 ## <FONT COLOR=#007575>**Servomotores**</font>
+Los servomotores, abreviado servos, son motores de corriente continua que además tienen una reductora con el fin de disminuir su velocidad de giro y aumentar el par motor en el eje. También incorporan sistema electrónico de control que permite hacerlos girar un determinado ángulo. Esa electrónica permite al servo saber en todo momento cual es su posición. Generalmente giran menos de una vuelta completa, 180º es bastante común, aunque tienen un ángulo variable según el modelo, pero existen ya servos de rotación continua que giran 360 grados.
+
+Existen infinidad de modelos de servomotor y en nuestro caso vamos a utilizar Micro Servos del tipo 9g SG90. En la imagen siguiente vemos el aspecto y los elementos que incorporan este tipo de servos.
+
+<center>
+
+| Aspecto y elementos de los servos 9g SG90 |
+|:-:|
+| ![ Aspecto y elementos de los servos 9g SG90](../../img/conexionado-pruebas/UNO/servos.png) |
+
+</center>
+
+Los servos tienen un funcionamiento muy parecido y la programación suele variar muy poco de unos a otros, aunque siempre es conveniente mirar el [datasheet](../../img/conexionado-pruebas/UNO/9g-sg90-datasheet.pdf) del que vamos a utilizar para mayor seguridad.
+
+Debido a que la resolución de la señal PWM que podemos conseguir con una placa tipo UNO el ángulo de giro que podremos mover un servo será mayor de un grado, aunque el servo puede moverse con una resolución mayor.  Las características de la señal PWM nos indican que debemos generar un pulso de trabajo entre 1 ms y 2 ms y con un periodo de 20 ms (50 Hz), es decir, solamente podremos cambiar de posición del servo cada 20 ms.
+
+Los microservos se pueden alimentar directamente de la placa UNO dado que su consumo es lo suficientemente bajo para ello, pero si es necesario, dependiendo del modelo de servo, habrá que alimentarlo con una fuente externa teniendo siempre la precaución de que las GNDs de la placa UNO y del servo queden interconectadas.
+
+Los colores usuales de los tres cables que salen del servo son los siguientes:
+
+* Negro o Marrón: GND
+* Rojo: Alimentación
+* Blanco o Naranja: Señal de control del servo (pulso enviado al servomotor)
+
+En la imagen siguiente se corrobora esta información.
+
+<center>
+
+| Colores de los cables en los servos 9g SG90 |
+|:-:|
+| ![Colores de los cables en los servos 9g SG90](../../img/conexionado-pruebas/UNO/servo-color.png) |
+
+</center>
+
+## <FONT COLOR=#007575>**Encoder infrarrojos FC-03**</font>
+Se trata de elementos basados en fotointerruptores de ranura como los que vemos en la imagen izquierda siguiente. A partir de estos se fabrican placas preparadas para conectar a Arduino como las que se ven en la imagen de la derecha siguiente.
+
+<center>
+
+| Izquierda: fotointerruptor de ranura - Derecha: sensor FC-03 |
+|:-:|
+| ![Izquierda: fotointerruptor de ranura - Derecha: sensor FC-03](../../img/conexionado-pruebas/UNO/fotointerruptor-encoder-FC-03.png) |
+
+</center>
+
+Los dispositivos basados en optointerruptores son ampliamente utilizados como encoders para detectar la velocidad de giro y la posición del eje de motores. Para realizar esta tarea se emplean discos opacos ranurados que se acoplan al eje del motor, aunque también se pueden emplear elementos translucidos sobre los que se dibujan franjas negras. En la imagen siguiente vemos algunos de estos discos.
+
+<center>
+
+| Diferentes tipos de discos para encoder óptico |
+|:-:|
+| ![Diferentes tipos de discos para encoder óptico](../../img/conexionado-pruebas/UNO/discos-encoder.png) |
+
+</center>
+
+Con el sensor FC-03, que incluye comparador [LM393](https://www.ti.com/lit/ds/symlink/lm393-n.pdf?ts=1626748827397&ref_url=https%253A%252F%252Fwww.google.com%252F), podemos calcular la velocidad de rotación de las ruedas de un robot. El funcionamiento básico del sensor es el siguiente; Si hacemos pasar una rueda dentada entre la ranura del sensor, este crea un pulso digital TTL en el pin D0, que podemos leer sin ningún problema en nuestra placa UNO. En la imagen siguiente vemos detalladas las diferentes partes del encoder.
+
+<center>
+
+| Pinout y partes del sensor FC-03 |
+|:-:|
+| ![Pinout y partes del sensor FC-03](../../img/conexionado-pruebas/UNO/partes-FC-03.png) |
+
+</center>
+
+Los pines de conexión del encoder FC-03 de la imagen anterior los podemos describir de la siguiente forma:
+
+- Vcc: Tensión de alimentación del módulo de 3,3V a 12V. Se recomienda 3,3V
+- GND: Masa o referencia 0V
+- D0: Salida de señal digital de pulsos TTL 
+- A0: Salida de señal analógica de los pulsos de salida. Se trata de la señal de salida en tiempo real que usualmente no se utiliza
+
+Como principales características técnicas definimos las siguientes:
+
+- Anchura de la ranura: 5mm
+- LED indicador de alimentación
+- LED indicador de los pulsos de salida del pin D0.
+
+Este tipo de encoder suele dar problemas a la hora de leer los pulsos digitales generados por el comparador LM393, y estos consisten en que la placa UNO lee más pulsos de los que se generan realmente, en la práctica del orden de cuatro veces más. En la imagen siguiente vemos el esquema del circuito que monta este encoder FC-03.
+
+<center>
+
+| Esquema interno del sensor FC-03 |
+|:-:|
+| ![Esquema interno del sensor FC-03](../../img/conexionado-pruebas/UNO/esquema-interno-FC-03.png) |
+
+</center>
+
+Podemos observar en este esquema como el comparador LM393 está configurado como de lazo abierto (no existe realimentación) lo que hace que el mismo sea extremadamente sensible a los cambios que se producen en la entrada, bien sean provocados por el sensor de ranura (los deseados) o bien por ruidos generados por la propia alimentación del sensor, los motores u otros elementos (pulsos no deseados) que puedan afectar a la señal de salida. Es decir, que la señal TTL presentará tanto en los flancos de subida como de bajada una serie de pulsos o rebotes que la placa UNO es capaz de leer e interpretar.
+
+La solución al problema de los pulsos no deseados puede implementarse por hardware o por software.
+
+* **Por hardware:** Una primera solución puede ser alimentar el FC-03 con 3,3V, pero no siempre es sencillo ni darnos una buena señal. La otra opción, mucho más eficaz y definitiva, es soldar un condensador de entre 10 y 100 nF entre los pines D0 y GND que filtrará dichos pulsos no deseados.
+*  **Por software:** Lo normal cuando usamos este tipo de sensores es que empleemos las interrupciones de Arduino, de ahí que los pines reservados para estos sensores sean los digitales 2 y 3, que es donde se implementan las interrupciones en la placa UNO. El punto en contra de esto es que tendremos que implementar un sistema antirrebotes (debounce) para estas dos entradas. En lo que respecta a hacer funcionar al robot no debemos preocuparnos por el tema ya que la librería incorpora la implementación del debounce por software. Si queremos entender algo mejor el tema del debounce podemos recurrir a multitud de tutoriales existente en la red siendo el que recomendamos el que aparece en el [blog de Luis Llamas](https://www.luisllamas.es/debounce-interrupciones-arduino/).
