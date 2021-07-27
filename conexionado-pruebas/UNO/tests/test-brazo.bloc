@@ -1,0 +1,80 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_6</toolbox>
+  <block type="masaylo_arranca_personalizado" id="5ieU1Dg!nIoHwK,#5b3g" x="245" y="20">
+    <field name="MIP">6</field>
+    <field name="MIA">7</field>
+    <field name="MIB">8</field>
+    <field name="MDP">11</field>
+    <field name="MDA">12</field>
+    <field name="MDB">13</field>
+    <next>
+      <block type="masaylo_US_INIT" id="Z,C])f;8`H@/BCjsSKk,">
+        <field name="trigger">A2</field>
+        <field name="echo">A3</field>
+        <next>
+          <block type="masaylo_SERVOS_INIT" id="Lh1aH%yd]TOtw@C_.^/x">
+            <field name="cabeza">5</field>
+            <field name="brazo">4</field>
+            <next>
+              <block type="masaylo_GIRA_BRAZO" id="n@_*PB[q9JcD.1D#I7G)">
+                <value name="anguloBrazo">
+                  <shadow type="math_number" id="PymtFW0;BMfnU~rqElUI">
+                    <field name="NUM">150</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="base_delay" id="S:(DW]ps*K6w3C#z9qhi">
+                    <field name="unite">s</field>
+                    <value name="DELAY_TIME">
+                      <shadow type="math_number" id="0%S}[nw^3KK;MWl2(k8/">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="masaylo_GIRA_BRAZO" id="pJD=@XUVVEt9*KlvLSA8">
+                        <value name="anguloBrazo">
+                          <shadow type="math_number" id="%/=NE5)8d:)wf5R=EcIc">
+                            <field name="NUM">90</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="base_delay" id="7@gC`}Q+Tt7vpV:7~`hr">
+                            <field name="unite">s</field>
+                            <value name="DELAY_TIME">
+                              <shadow type="math_number" id="PH2#*_J5!PtP8pl=5JYU">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="masaylo_GIRA_BRAZO" id="^un4LgJO9mhJKRb;/Q%W">
+                                <value name="anguloBrazo">
+                                  <shadow type="math_number" id="2p1Kt)u7x+rBumAz7V3M">
+                                    <field name="NUM">30</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="base_delay" id="0S98eul?TTT(PZU).5n]">
+                                    <field name="unite">s</field>
+                                    <value name="DELAY_TIME">
+                                      <shadow type="math_number" id="})*1tco98aBZew,^EW,9">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
