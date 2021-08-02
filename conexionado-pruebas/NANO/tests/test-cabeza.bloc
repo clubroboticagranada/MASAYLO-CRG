@@ -1,0 +1,99 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_6</toolbox>
+  <block type="masaylo_arranca_personalizado" id="5ieU1Dg!nIoHwK,#5b3g" x="109" y="43">
+    <field name="MIP">6</field>
+    <field name="MIA">7</field>
+    <field name="MIB">8</field>
+    <field name="MDP">11</field>
+    <field name="MDA">12</field>
+    <field name="MDB">13</field>
+    <next>
+      <block type="masaylo_US_INIT" id="Z,C])f;8`H@/BCjsSKk,">
+        <field name="trigger">A2</field>
+        <field name="echo">A3</field>
+        <next>
+          <block type="masaylo_SERVOS_INIT" id="Lh1aH%yd]TOtw@C_.^/x">
+            <field name="cabeza">5</field>
+            <field name="brazo">4</field>
+            <next>
+              <block type="masaylo_GIRA_CABEZA" id="Y@4iR(%+cIYP!L!DGuBo">
+                <value name="anguloCabeza">
+                  <shadow type="math_number" id="`3r5(Pc{n%{GhMc4Af`+">
+                    <field name="NUM">180</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="base_delay" id="S:(DW]ps*K6w3C#z9qhi">
+                    <field name="unite">s</field>
+                    <value name="DELAY_TIME">
+                      <shadow type="math_number" id="0%S}[nw^3KK;MWl2(k8/">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="masaylo_GIRA_CABEZA" id="k2CesGIu6S^[Ds:C]Jm)">
+                        <value name="anguloCabeza">
+                          <shadow type="math_number" id="8_$sfr8M:vuSlJOE;y,]">
+                            <field name="NUM">90</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="base_delay" id="s-h%|G2wlLdE4A5WCMOO">
+                            <field name="unite">s</field>
+                            <value name="DELAY_TIME">
+                              <shadow type="math_number" id="t{v_Qd[v~I]+No1+5t+s">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="masaylo_GIRA_CABEZA" id="%+)B$ttzYNUz9*LMN1b@">
+                                <value name="anguloCabeza">
+                                  <shadow type="math_number" id="8GQMS~@h]+:##tx.Wyp*">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="base_delay" id="33rd.f[QX+xE*kJOfN_/">
+                                    <field name="unite">s</field>
+                                    <value name="DELAY_TIME">
+                                      <shadow type="math_number" id="-.$2KId/lmkX(;30EfDB">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="masaylo_GIRA_CABEZA" id="N]qEro1s638Z#L_e-STz">
+                                        <value name="anguloCabeza">
+                                          <shadow type="math_number" id="NIy)_o{c%NRGWp}p*%K7">
+                                            <field name="NUM">90</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="base_delay" id="M[2F)rew*0TLzRtZB;(r">
+                                            <field name="unite">s</field>
+                                            <value name="DELAY_TIME">
+                                              <shadow type="math_number" id="vEW[vt;d+0lsWQ,}!)sy">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
