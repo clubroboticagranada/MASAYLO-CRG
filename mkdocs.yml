@@ -2,7 +2,7 @@
 site_name: MASAYLO-CRG
 site_description: MASAYLO-CRG es un robot creado a partir de la idea de Antonio Gómez (https://github.com/agomezgar/masaylo) del que se van a desarrollar las tres versiones que se describen en la documentación y que tiene como propósito principal ser un robot sencillo de imprimir y de construir y que pueda servir para iniciar en el tema STEAM al alumnado desde los últimos cursos de educación primaria hasta bachillerato y ciclos formativos pasando por las distintas etapas de la ESO.
 
-site_author: Antonio Gómez, Pedro Ruiz, Manuel Hidalgo, Prudencio Luna, José Luis Bueno y Federico Coca
+site_author: Antonio Gómez, Pedro Ruiz, Manuel Hidalgo, Prudencio Luna, José Luis Bueno, Isabel Ruiz y Federico Coca
 site_url: https://clubroboticagranada.github.io/MASAYLO-CRG/
 
 # 2. Repositorio
@@ -33,6 +33,10 @@ nav:
     - Análisis de elementos: conexionado-pruebas/UNO/elementos.md
     - Conexionado: conexionado-pruebas/UNO/conex.md
     - Pruebas básicas de funcionamiento: conexionado-pruebas/UNO/test.md
+  - Versión NANO. Conexionado y pruebas:
+    - Análisis de elementos: conexionado-pruebas/NANO/elementos-N.md
+    - Conexionado: conexionado-pruebas/NANO/conex-N.md
+    - Pruebas básicas de funcionamiento: conexionado-pruebas/NANO/test-N.md
   - Miscelanea:
     - Autores: Miscelanea/about.md
     - Licencias: Miscelanea/lic.md

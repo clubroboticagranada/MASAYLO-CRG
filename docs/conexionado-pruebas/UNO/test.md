@@ -1,5 +1,5 @@
 # <FONT COLOR=#8B008B>Pruebas básicas de funcionamiento</font>
-Una vez analizados y conectados los distintos elementos iremos, de forma progresiva, haciendo un pequeño programa mediante la aplicación `Masaylo Blockly` basada en `Blocklino de Fontaine Jean Philippe`, y pensada para programar robots utilizando un entorno gráfico o de programación por bloques. En el apartado de software se pueden encontrar los enlaces de descarga y toda la información de la aplicación.
+Una vez analizados y conectados los distintos elementos iremos haciendo pequeños programas bien mediante la aplicación `Masaylo Blockly` basada en `Blocklino de Fontaine Jean Philippe`, y pensada para programar robots utilizando un entorno gráfico o de programación por bloques, o bien utilizando el IDE de Arduino. En el apartado de software se pueden encontrar los enlaces de descarga y toda la información de la aplicación.
 
 ## <FONT COLOR=#007575>**Alimentación**</font>
 Colocamos las pilas AA en su lugar respetando la polaridad de las mismas y accionamos el interruptor. Si todo es correcto en ambas placas se debe encender un diodo LED rojo indicativo de que están alimentadas, tal y como observamos en la imagen siguiente:

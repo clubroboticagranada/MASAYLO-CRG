@@ -31,7 +31,7 @@ La forma más sencilla de conectar los elementos es utilizando un jack de alimen
 Se **<FONT COLOR=#FF0000>recomienda</FONT>** que una vez finalizadas las conexiones se revisen estas cuidadosamente, tanto en las conexiones en si mismas como en la polaridad, antes de alimentar el sistema o conectar el USB para grabar algún programa, así evitaremos en lo posible romper algo por mal conexionado.
 
 ## <FONT COLOR=#007575>**Motores DC 3 a 6V**</font>
-Procedemos a conectar los motores en las bornas del driver L298 de forma que el motor izquierdo quede conectado a OUT1 - OUT2 y el derecho a OUT3 - OUT4. Por ahora no nos preocupamos de la polaridad ya que lo haremos en las pruebas y si algún motor girar en sentido contario al esperado bastará con intercambiar sus conexiones de posición. En la imagen siguiente tenemos el conexionado de forma gráfica.
+Procedemos a conectar los motores en las bornas del driver L298 de forma que el motor izquierdo quede conectado a OUT1 - OUT2 y el derecho a OUT3 - OUT4 que son los pines encaargados de entregar energia a los motores. Por ahora no nos preocupamos de la polaridad ya que lo haremos en las pruebas y si algún motor girar en sentido contrario al esperado bastará con intercambiar sus conexiones de posición. En la imagen siguiente tenemos el conexionado de forma gráfica.
 
 <center>
 
@@ -41,8 +41,10 @@ Procedemos a conectar los motores en las bornas del driver L298 de forma que el 
 
 </center>
 
+Los pines de control de cada motor se conectan como se indica en la gráfica, de forma que ENA será el control PWM del motor izquierdo que se hará en el pin 6, e IN1 e IN2 los conectamos según el sentido de giro adecuado a los pines 7 y 8. Para el motor derecho el pin PWM es el 11 que irá a ENB y los IN3 e IN4 a los pines 12 y 13.
+
 ## <FONT COLOR=#007575>**Zumbador**</font>
-Usamos el pin D1 o TxD y su Vcc asociado para conectarlo. En principio esta conexión no debe interferir en la grabación de programas en la placa que siempre se realiza utilizando los pines D0 y D1 de la placa, pero si nos da algún problema basta con que desconectemos el pin D0 del sensor en uno de sus extremos, procedamos a grabar el programa correspondiente y una vez cargado este volvemos a conectar el pin en su lugar. Si no queremos estar escuchando pitidos de manera continuada cuando subimos código a la placa o cuando usamos el monitor serie también debemos desconectar esta patilla. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+Usamos el pin D1 o TxD y su Vcc asociado para conectarlo. En principio esta conexión no debe interferir en la grabación de programas en la placa que siempre se realiza utilizando los pines D0 y D1 de la misma, pero si nos da algún problema basta con que desconectemos el pin D0 del sensor en uno de sus extremos, procedamos a grabar el programa correspondiente y una vez cargado este volvemos a conectar el pin en su lugar. Si no queremos estar escuchando pitidos de manera continuada cuando subimos código a la placa o cuando usamos el monitor serie también debemos desconectar esta patilla. Alternativamente y en caso de no usar la funcionalidad Bluetooth podemos conectar el buzzer a uno de los pines reservados para esta funcionalidad en el pinout. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
 
 <center>
 
@@ -96,7 +98,7 @@ Si hemos puesto el pin en estado alto estando configurado como salida, la resist
 La hoja de datos de ATmega advierte que el cambio de pines analógicos a digitales puede introducir [jitter o ruido no deseado](https://es.wikipedia.org/wiki/Jitter#:~:text=Se%20denomina%20jitter%20o%20fluctuaci%C3%B3n,se%C3%B1al%20de%20ruido%20no%20deseada.&text=El%20jitter%20es%20la%20primera%20consecuencia%20de%20un%20retraso%20de%20la%20se%C3%B1al.) en las lecturas analógicas del resto de pines. Se aconseja, después de poner los pines analógicos en modo digital, agregar un retardo corto antes de usar `analogRead()`.
 
 ## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>
-Una vez vista la explicación sobre pines analógicos utilizados como digitales diremos que vamos a conectar el sensor de infrarrojos izquierdo al pin A0 y el derecho al pin A1. Hay tener especial cuidado en que los pines marcados con VCC y GND se conecten a los pines V y G respectivamente de la placa UNO. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+Una vez vista la explicación sobre pines analógicos utilizados como digitales diremos que vamos a conectar el sensor de infrarrojos izquierdo al pin A0 y el derecho al pin A1. Hay que tener especial cuidado en que los pines marcados con VCC y GND se conecten a los pines V y G respectivamente de la placa UNO. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
 
 <center>
 
@@ -127,7 +129,7 @@ Una fotografía del detalle del conexionado en el robot la vemos a continuación
 </center>
 
 ## <FONT COLOR=#007575>**Sensor de distancia HC-SR04**</font>
-De nuevo utilizamos dos pines analógicos como digitales por lo que debemos tener en cuenta lo referido anteriormente sobre el tema. Vamos a conectar el Trigger del sensor al pin A2 que deberemos configurar como salida y el pin Echo a A3 que deberemos configurar como entrada. En caso de utilizar MasayloBlockly o la librería descrita en este tutorial estas definiciones estarán ya realizadas. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+De nuevo utilizamos dos pines analógicos como digitales por lo que debemos tener en cuenta lo referido anteriormente sobre el tema. Vamos a conectar el Trigger del sensor al pin A2 que deberemos configurar como salida y el pin Echo a A3 que deberemos configurar como entrada. En caso de utilizar MasayloBlockly o la librería descrita en este tutorial estas definiciones estarán ya realizadas. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente. Se han omitido intencionadamente los cables de alimentación del sensor para mayor claridad de la imagen.
 
 <center>
 
@@ -137,7 +139,7 @@ De nuevo utilizamos dos pines analógicos como digitales por lo que debemos tene
 
 </center>
 
-En la imagen siguiente vemos el detalle de conexionado del sensor de ultrasonidos HC-SR04.
+En la imagen siguiente vemos el detalle de conexionado del sensor de ultrasonidos HC-SR04 incluidos los pines de alimentación.
 
 <center>
 
@@ -158,7 +160,7 @@ Una fotografía del detalle del conexionado en el robot la vemos a continuación
 </center>
 
 ## <FONT COLOR=#007575>**Servomotores**</font>
-En este caso los pines que utilizaremos son los digitales 4 y 5, el primero para el brazo y el segundo para la cabeza. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+En este caso los pines que utilizaremos son los digitales 4 y 5, el primero para el brazo y el segundo para la cabeza. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente. Se han omitido de nuevo las conexiones de alimentación.
 
 <center>
 
@@ -189,7 +191,7 @@ Una fotografía del detalle del conexionado en el robot la vemos a continuación
 </center>
 
 ## <FONT COLOR=#007575>**Encoder infrarrojos FC-03**</font>
-En este caso los pines que utilizaremos son los digitales 2 y 3, que son los pines que admiten interrupciones en las placas tipo UNO, Nano, Mega, Mini y Leonardo. En la imagen siguiente podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
+En este caso los pines que utilizaremos son los digitales 2 y 3, que son los pines que admiten interrupciones en las placas tipo UNO, Nano, Mega, Mini y Leonardo. En la imagen siguiente (se omiten los cables de alimentación para mayor claridad) podemos ver el conexionado de estos elementos de forma gráfica junto con los conectados anteriormente.
 
 <center>
 
