@@ -165,7 +165,9 @@ void loop() {
 }
 ~~~
 
-En el video [prueba del zumbador en Masaylo-CRG](https://youtu.be/laqXu4w0ZEk) podemos escuchar el resultado de grabar el código anterior en el robot.
+En el video "prueba del zumbador en Masaylo-CRG" que tenemos a continuación podemos escuchar el resultado de grabar el código anterior en el robot.
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/laqXu4w0ZEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
 ## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>
 Para probar y ajustar los sensores de infrarrojos vamos a realizar un sencillo programa en MasayloBlockly como el que vemos en la imagen siguiente.

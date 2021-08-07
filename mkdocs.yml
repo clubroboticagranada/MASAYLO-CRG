@@ -34,6 +34,7 @@ nav:
     - Conexionado: conexionado-pruebas/UNO/conex.md
     - Pruebas básicas de funcionamiento: conexionado-pruebas/UNO/test.md
   - Versión NANO. Conexionado y pruebas:
+    - ¡MUY IMPORTANTE! Leer antes de seguir: conexionado-pruebas/NANO/leer-antes.md
     - Análisis de elementos: conexionado-pruebas/NANO/elementos-N.md
     - Conexionado: conexionado-pruebas/NANO/conex-N.md
     - Pruebas básicas de funcionamiento: conexionado-pruebas/NANO/test-N.md
