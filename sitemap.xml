@@ -2,77 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ensamble-s/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ensamble/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ficheros-media/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ficheros/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/about/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/lic/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/soft/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/webgrafia/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/conex-N/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/elementos-N/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/leer-antes/</loc>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/test-N/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/UNO/conex/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/UNO/elementos/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/UNO/test/</loc>
-         <lastmod>2021-08-02</lastmod>
+         <lastmod>2021-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
