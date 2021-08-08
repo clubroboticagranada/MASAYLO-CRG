@@ -38,6 +38,13 @@ nav:
     - Análisis de elementos: conexionado-pruebas/NANO/elementos-N.md
     - Conexionado: conexionado-pruebas/NANO/conex-N.md
     - Pruebas básicas de funcionamiento: conexionado-pruebas/NANO/test-N.md
+  - Librería para Arduino:
+    - Por qué de la librería: libreria/por_que.md
+    - Instalación: libreria/instalacion.md
+    - Incorporación de la librería en un programa: libreria/incorporar_libreria.md
+    - Ejemplos de Masaylo: libreria/ejemplos.md
+    - Control de motores: libreria/motores.md
+    - Ultrasonidos: libreria/ultrasonidos.md  
   - Miscelanea:
     - Autores: Miscelanea/about.md
     - Licencias: Miscelanea/lic.md
