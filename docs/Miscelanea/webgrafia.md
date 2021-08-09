@@ -9,3 +9,5 @@
 * [Blog de Luis Llamas](https://www.luisllamas.es/)
 
 * [Detalles sobre Arduino Nano CH340](http://actrl.cz/blog/index.php/2016/arduino-nano-ch340-schematics-and-details/)
+
+* [Robótica con Arduino. Introducción a la programación de sistemas de control](https://serendipiaeditorial.com/robotica-con-arduino/) por Antonio Gómez García y María Dolores Nogueras Atance

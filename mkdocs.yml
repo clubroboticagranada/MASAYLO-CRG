@@ -44,7 +44,17 @@ nav:
     - Incorporación de la librería en un programa: libreria/incorporar_libreria.md
     - Ejemplos de Masaylo: libreria/ejemplos.md
     - Control de motores: libreria/motores.md
-    - Ultrasonidos: libreria/ultrasonidos.md  
+    - Ultrasonidos: libreria/ultrasonidos.md
+  - Programación con MasayloBlockly:
+    - Descarga e instalación: masayloBlockly/descarga.md
+    - Primeros pasos: masayloBlockly/primerospasos.md
+    - Instalación de librerías: masayloBlockly/instalacion.md
+    - Mi primer programa. Movimientos básicos: masayloBlockly/primerPrograma.md 
+    - Control de velocidad. Uso de PWM: masayloBlockly/PWM.md
+    - Detección de obstáculos. Uso del puerto serie: masayloBlockly/distanciaPuertoSerie.md
+    - Introducción a los bloques lógicos. Uso de sensores de infrarrojos.: masayloBlockly/sensoresIR.md
+    - Trabajo con encoder. Control básico de distancias y ángulos: masayloBlockly/encoder.md
+    - Uso de servomotores en brazo y cabeza: masayloBlockly/servos.md
   - Miscelanea:
     - Autores: Miscelanea/about.md
     - Licencias: Miscelanea/lic.md
