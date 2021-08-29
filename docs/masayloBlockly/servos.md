@@ -1,6 +1,6 @@
 # <FONT COLOR=#8B008B>Uso de servomotores en brazo y cabeza</font>
 
-Como se suele decir en inglés, "last but no least", por último, pero no por ello más importante, Masaylo nos ofrece también la opción de utilizar servomotores de posición de modelo SG-90 o similar que permiten el movimiento angular, si así lo deseamos, del sensor de ultrasonidos (aunque también se nos ofrece la opción de dejarlo fijo) y de un brazo auxiliar que posibilitaría la aprehensión de objetivos o el desplazamiento de pequeños obstáculos.
+Como se suele decir en inglés, "last but no least", por último, pero no por ello menos importante, Masaylo nos ofrece también la opción de utilizar servomotores de posición de modelo SG-90 o similar que permiten el movimiento angular, si así lo deseamos, del sensor de ultrasonidos (aunque también se nos ofrece la opción de dejarlo fijo) y de un brazo auxiliar que posibilitaría la captura y/o desplazamiento de pequeños obstáculos.
 
 <center>
 

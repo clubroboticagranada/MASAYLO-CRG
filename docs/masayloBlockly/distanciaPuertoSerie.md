@@ -107,7 +107,7 @@ Para abrir el monitor del puerto serie, sólo hay que hacer doble click en el ic
 
 ### <FONT COLOR=#007575>**Ejercicio de ampliación: programar un sistema de desplazamiento que evite obstáculos**</font>
 
-Con lo mostrado hasta aquí, el lector debería ya estar suficientemente capacitado para programa a Masaylo de modo que éste se mueva de forma autónoma evitando los obstáculos que se presenten. En el botón de Ejemplos del menú principal hay precisamente un algoritmo que cumple este objetivo, llamado "Aprende a detectar obstáculos con el sensor US y a esquivarlos mediante movimientos aleatorios".
+Con lo mostrado hasta aquí, el lector debería ya estar suficientemente capacitado para programar a Masaylo de modo que éste se mueva de forma autónoma evitando los obstáculos que se presenten. En el botón de Ejemplos del menú principal hay precisamente un algoritmo que cumple este objetivo, llamado "Aprende a detectar obstáculos con el sensor US y a esquivarlos mediante movimientos aleatorios".
 
 <center>
 

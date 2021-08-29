@@ -3,7 +3,7 @@
 ## <FONT COLOR=#007575>**Organización general del escritorio**</font>
 El entorno de programación nos ofrece un escritorio dividido en cuatro grandes zonas:
 
-+ Menú principal 
++ Menú principal
 + Menú de opciones de programación (desplegará un submenú con distintos comandos según la opción elegida)
 + Zona principal de trabajo
 + Zona de traducción simultánea a C++ (desplegable o no a elección del usuario)
@@ -69,7 +69,7 @@ La zona de traducción simultánea <font color=FF0000>no es editable y por lo ta
 
 El espacio de traducción simultánea incorpora, a su vez, dos herramientas útiles, representadas por sus respectivos iconos:
 
-+ ![Guardar sketch](../img/masayloBlockly/iconoDisco.png)**Guardar sketch** Permite guardar el sketch con extensión *.ino (la extensión extándar para el IDE de Arduino) en la carpeta señalada por el usuario con el nombre que desee.
++ ![Guardar sketch](../img/masayloBlockly/iconoDisco.png)**Guardar sketch** Permite guardar el sketch con extensión *.ino (la extensión estándar para el IDE de Arduino) en la carpeta señalada por el usuario con el nombre que desee.
 + ![Copiar sketch](../img/masayloBlockly/iconoCopy.png)**Copiar sketch** Guarda el texto del sketch en memoria para utilizarlo en funciones de copia y pega en otros programas.
 
 ## <FONT COLOR=#007575>**Conmutación a modo texto**</font>

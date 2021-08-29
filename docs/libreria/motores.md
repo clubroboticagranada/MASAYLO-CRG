@@ -10,10 +10,10 @@ Lo primero que debemos hacer es crear un objeto tipo robot Masaylo, para ello po
 
 </center>
 
-En la función setup(), ya sabéis que se ejecuta una sóla vez, vamos a definir los pines de los motores se puede hacer de dos maneras:
+En la función setup(), ya sabéis que se ejecuta una sola vez, vamos a definir los pines de los motores, lo que se puede hacer de dos maneras:
 
 * Sin pasar parámetros (sin colocar nada entre los paréntesis), *objetoMasaylo.init()*, en nuestro caso de ejemplo *m.init()*: con esta orden indicamos que los pines de los motores son los que trae por defecto *objetoMasaylo.init(6,7,8,11,12,13)*, siendo el orden de los pines definidos de izquierda a derecha,  pin de control de velocidad de giro (PWM) del motor izquierdo, pin A del motor izquierdo,  pin B del motor izquierdo, pin de control de velocidad de giro (PWM) del motor derecho, pin A del motor derecho,  pin B del motor derecho.
-* Pasando parámetros de pines (colocándolos entre paréntesis), *objetoMasaylo.init (pinPWMMotorIzdo,pinAMotorIzdo,pinBMotorIzdo,pinPWMMotorDcho,pinAMotorDcho,pinBMotorDcho)*, de esta manera podríamos conectar nuestros motores a los pines que deseemos, un ejemplo de podría ser m.init(6,7,8,11,12,13).
+* Pasando parámetros de pines (colocándolos entre paréntesis), *objetoMasaylo.init (pinPWMMotorIzdo,pinAMotorIzdo,pinBMotorIzdo,pinPWMMotorDcho,pinAMotorDcho,pinBMotorDcho)*, de esta manera podríamos conectar nuestros motores a los pines que deseemos, un ejemplo podría ser m.init(6,7,8,11,12,13).
 
 Pasamos a explicar las instrucciones para mover el robot:
 

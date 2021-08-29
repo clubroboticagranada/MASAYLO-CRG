@@ -45,6 +45,7 @@ nav:
     - Ejemplos de Masaylo: libreria/ejemplos.md
     - Control de motores: libreria/motores.md
     - Ultrasonidos: libreria/ultrasonidos.md
+    - Servomotores: libreria/servos.md
   - Programación con MasayloBlockly:
     - Descarga e instalación: masayloBlockly/descarga.md
     - Primeros pasos: masayloBlockly/primerospasos.md
