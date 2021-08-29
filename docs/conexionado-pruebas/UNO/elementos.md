@@ -41,10 +41,10 @@ Este módulo con el L298N nos permite alimentar nuestro Arduino a partir de la s
 
 Los pines *Vin* y *GND* son los de alimentación del módulo con una tensión que puede ir de 3V a 35V. El pin *Vlog* (Vlógico) tiene dos modos de funcionamiento dependiendo de que el jumper *Regulador* esté o no colocado. Las condiciones de funcionamiento son:
 
-* **Jumper colocado:** El regulador LM7805 está activado y en Vlog habrá una tensión de 5V siempre que el módulo esté alimentado con una tensión máxima de hasta 12V. Si lo alimentamos con mas tensión tendremos que quitar el jumper y alimentar con 5V la lógica del módulo a través de este pin.
+* **Jumper colocado:** El regulador LM7805 está activado y en Vlog habrá una tensión de 5V siempre que el módulo esté alimentado con una tensión máxima de hasta 12V. Si lo alimentamos con una tensión superior tendremos que quitar el jumper y alimentar con 5V la lógica del módulo a través de este pin.
 * **Jumper sin colocar:** El regulador LM7805 está desactivado y tenemos que alimentar la lógica del módulo a través de Vlog.
 
-Debemos tener <FONT COLOR="#FF0000">¡Cuidado!</FONT> si introducimos corriente por Vog con el jumper de regulación colocado podemos provocar daños en el módulo.
+Debemos tener <FONT COLOR="#FF0000">¡Cuidado!</FONT> si introducimos corriente por Vlog con el jumper de regulación colocado podemos provocar daños en el módulo.
 
 El resto de conexiones se utilizan para el control de motores y para el caso de motores DC su utilización es la siguiente:
 
@@ -90,7 +90,7 @@ El aspecto físico de estos motores lo vemos en la imagen siguiente.
 </center>
 
 ## <FONT COLOR=#007575>**Zumbador**</font>
-Si queremos reproducir sonidos de forma sencilla y económica debemos sutilizar un zumbador o buzzer pasivo como el que vemos en la imagen siguiente.
+Si queremos reproducir sonidos de forma sencilla y económica podemos utilizar un zumbador o buzzer pasivo como el que vemos en la imagen siguiente.
 
 <center>
 
@@ -107,7 +107,7 @@ Normalmente no tienen polaridad, pero si está marcada en la carcasa o es distin
 El buzzer pasivo, a diferencia del activo, no tiene un oscilador interno y esto obliga a generar la frecuencia desde Arduino, para ello disponemos de la función [tone()](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/) que implementa el IDE.
 
 ## <FONT COLOR=#007575>**Sensores de infrarrojos**</font>
-Hemos optado por poner al robot una pareja de sensores de reflexión fotoeléctrica con distancia de detección ajustable entre 2 y 30cm, conocido como sensor de infrarrojos FC-51, como el que vemos en la imagen siguiente, donde se indica el potenciometro de ajuste de distancia, el diodo emisor de IR y el fototransistor o detector de reflexión.
+Hemos optado por poner al robot una pareja de sensores de reflexión fotoeléctrica con distancia de detección ajustable entre 2 y 30cm (20 y 300mm), conocido como sensor de infrarrojos FC-51, como el que vemos en la imagen siguiente, donde se indica el potenciómetro de ajuste de distancia, el diodo emisor de IR y el fototransistor o detector de reflexión. Respecto a la distancia de detección indicar que la citada anteriormente es la que la inmensa mayoría de vendedores ponen y, aunque hay algunos que reducen esta distancia bastante, es algo que debemos experimentar nosotros mismos teniendo en cuenta las condiciones de luminosidad en las que estemos trabajando.
 
 <center>
 
@@ -117,7 +117,7 @@ Hemos optado por poner al robot una pareja de sensores de reflexión fotoeléctr
 
 </center>
 
-Recordemos el funcionamiento básico del sistema. El LED infrarrojo emite luz infrarroja, o sea, de menor frecuencia (o mayor longitud de onda) que la nuestros ojos nos permiten ver, es decir, para nosotros es invisible. El sensor que hemos elegido funciona cuando esta luz choca contra una superficie negra que la reflejará reflejará y llegará al fototransistor. Existen muchas clases de sensores de este tipo y hemos escogido este por su amplio rango de ajuste y su posibilidad de montaje vertical. Utilizando un par de estos sensores podemos seguir una linea detectando si se sale a derecha o izquierda de la línea y redireccionarlo de nuevo a la linea. 
+Recordemos el funcionamiento básico del sistema. El LED infrarrojo emite luz infrarroja, o sea, de menor frecuencia (o mayor longitud de onda) que la que nuestros ojos nos permiten ver, es decir, para nosotros es invisible. El sensor que hemos elegido funciona cuando esta luz choca contra una superficie negra que la reflejará y llegará al fototransistor. Existen muchas clases de sensores de este tipo y hemos escogido este por su amplio rango de ajuste y su posibilidad de montaje vertical. Utilizando un par de estos sensores podemos seguir una linea detectando si se sale por la derecha o por la izquierda de la misma y rectificar la dirección de avance hasta conseguir estar de nuevo en la línea.
 
 Este sensor tiene 3 pines de conexión, Vcc o 5V y GND para la alimentación y D0 u OUT como salida de señal que indicará si está llegando o no el reflejo del LED al fototransistor. En el esquema de la imagen siguiente se puede estudiar el funcionamiento electrónico de esta plaquita.
 
@@ -134,9 +134,9 @@ El LM393 está configurado como comparador entre el nivel de tensión ajustado m
 Mediante el potenciómetro ajustamos la sensibilidad del fotorreceptor.
 
 ## <FONT COLOR=#007575>**Sensor de distancia HC-SR04**</font>
-El sensor genera y emite una serie de tonos de ultrasonidos a una frecuencia de 40 kHz (no perceptibles al oído humano) que si rebotan en una superficie vuelven y son captados por un micrófono receptor de ultrasonidos que incorpora el propio sensor. Midiendo el tiempo que tardan en volver los tonos enviados podemos calcular la distancia a la que se encuentra el objeto sobre el que han rebotado. El propio circuito realiza los cálculos necesarios para determinar la distancia que mas adelante veremos como se calcula. El sistema es similar al que usan algunos animales como ballenas, murciélagos y delfines, para localizar obstáculos y presas.
+El sensor genera y emite una serie de tonos de ultrasonidos a una frecuencia de 40 kHz (no perceptibles al oído humano) que si rebotan en una superficie vuelven y son captados por un micrófono receptor de ultrasonidos que incorpora el propio sensor. Midiendo el tiempo que tardan en volver los tonos enviados podemos calcular la distancia a la que se encuentra el objeto sobre el que han rebotado. El propio circuito realiza los cálculos necesarios para determinar la distancia a la que está la superficie. El sistema es similar al que usan algunos animales como ballenas, murciélagos y delfines, para localizar obstáculos y presas.
 
-El HC-SR04 es un sensor de distancia de baja precisión, en teoría con una rango de medición de 2cm a 400 cm, con una resolución de 0.3cm, pero en la práctica se limita a un rango entre 20cm y 2 metros.
+El HC-SR04 es un sensor de distancia de baja precisión, en teoría con un rango de medición de 2cm a 400 cm, con una resolución de 0.3cm, pero en la práctica se limita a un rango entre 20cm y 2 metros.
 
 El aspecto del HC-SR04 es muy característico y se reconoce con facilidad porque tiene dos "ojos" que realmente son los dispositivos de emisión y recepción de ultrasonidos que integra este módulo, y es justo por esto por lo que hemos dotado al robot de una cabeza giratoria que en el funcionamiento parecerá que el robot mira a un lado y otro.
 

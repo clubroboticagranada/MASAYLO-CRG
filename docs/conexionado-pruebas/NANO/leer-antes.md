@@ -1,7 +1,7 @@
 # <FONT COLOR=#FF0000>**Aclaraciones sobre placas Nano**</font>
 Vamos a analizar y establecer las diferencias entre un Arduino Nano original y las versiones económicas de este, al menos en dos versiones de estas.
 
-si vamos a trabajar con placas [Arduino Nano](https://search.arduino.cc/search?tab=&q=nano) originales podemos omitir la lectura de este apartado, pero si vamos a trabajar con clones (las conocidas como nanos chinos) es **MUY IMPORTANTE** que leamos detenidamente este apartado con el fin de averiguar que placa nano es la que tenemos en nuestras manos y así poder actuar en consecuencia.
+Si vamos a trabajar con placas [Arduino Nano](https://search.arduino.cc/search?tab=&q=nano) originales podemos omitir la lectura de este apartado, pero si vamos a trabajar con clones (las conocidas como nanos chinos) es **MUY IMPORTANTE** que leamos detenidamente este apartado con el fin de averiguar que placa nano es la que tenemos en nuestras manos y así poder actuar en consecuencia.
 
 Si hay que aclarar que este estudio se realiza para la versión nano convencional implementada con microcontroladores ATMega y no para la nueva línea de productos cuyo cerebro se implementa con dispositivos microcontroladores SAMD21G18A.
 
@@ -83,16 +83,16 @@ Una búsqueda del datasheet de este componente nos lleva a obtenerla de [Diodes]
 
 </center>
 
-Observamos claramente que la corriente directa del diodo está por debajo de las especificaciones requeridas para una placa Nano por lo que debemos asegurarnos, cuando adquirimos este tipo de placas, de que diodo llevan y que al menos presente las especificaciones de 500mA en adelante.
+Observamos claramente que la corriente directa del diodo está por debajo de las especificaciones requeridas para una placa Nano por lo que debemos asegurarnos, cuando adquirimos este tipo de placas, del diodo que llevan y que al menos presente las especificaciones de 500mA en adelante.
 
 La experiencia indica que, aunque con estas placas podemos trabajar grabando el firmware, desconectando el USB y alimentándola con una fuente externa, tarde o temprano dejaremos conectado el USB, accionaremos la alimentación externa y provocaremos una circulación de corriente (si tenemos conectados suficientes dispositivos a la placa) mayor a la que soporta el diodo que se quemará y dejará la placa inservible.
 
 ## <FONT COLOR=#007575>**Recomendaciones**</font>
-Lógicamente la primera va a ser trabajar con placas originales que nos ofrecerán todas las garantías por su contrastada calidad y su precio tampoco es demasiado elevado ya que podemos encontrarlas por unos 20€. Por ejemplo [BricoGeek](https://tienda.bricogeek.com/arduino/12-arduino-nano-8058333490342.html) es un distribuidor que envía con bastante rapidez.
+Lógicamente la primera va a ser trabajar con placas originales que nos ofrecerán todas las garantías por su contrastada calidad y su precio tampoco es demasiado elevado. Por ejemplo [BricoGeek](https://tienda.bricogeek.com/arduino/12-arduino-nano-8058333490342.html) es un distribuidor que envía con bastante rapidez a precios muy razonables.
 
 En segundo lugar la recomendación sería la placa de Keyestudio ks0173 que distribuye oficialmente para España [Innova Didactic](https://shop.innovadidactic.com/es/standard-placas-shields-y-kits/691-keyestudio-nano-3-0-chip-ch340-cable-usb.html) por un precio de unos 7€ y que también tiene una distribución muy rápida.
 
-En tercer lugar, aunque lógicamente existen otros muchos fabricante de clones, sería Elegoo que en España podemos comprar a través de [Amazon un kit de tres placas](https://www.amazon.es/dp/B0716T2L77) muy bien embaladas y por unos 14€.
+En tercer lugar, aunque lógicamente existen otros muchos fabricantes de clones, sería Elegoo que en España podemos comprar a través de [Amazon](https://www.amazon.es/dp/B0716T2L77) un kit de tres placas muy bien embaladas y por unos 14€.
 
 Las versiones de Keyestudio (derecha) y Elegoo (izquierda) se construyen con un diodo tipo B2 tal y como vemos destacado en la imagen siguiente:
 

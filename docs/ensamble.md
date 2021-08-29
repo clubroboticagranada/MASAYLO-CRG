@@ -2,7 +2,7 @@
 
 ***
 
-Vamos a realizar el paso a paso de montaje del robot utilizando para ellos la versión **MASAYLO-CRG-UNO**. El montaje de las otras versiones es totalmente similar y la única diferencia va a estar en la placa de control teniendo la plataforma superior habilitadas orificios para las distintas placas. En cada uno de los pasos iremos indicando los materiales necesarios para su consecución.
+Vamos a realizar el paso a paso de montaje del robot utilizando para ellos la versión **MASAYLO-CRG-UNO**. El montaje de las otras versiones es totalmente similar y la única diferencia va a estar en la placa de control teniendo la plataforma superior habilitados orificios para las distintas placas. En cada uno de los pasos iremos indicando los materiales necesarios para su consecución.
 
 Las herramientas necesarias para llevar a cabo el proceso van a depender del tipo de cabeza de tornillo que utilicemos, pero en cualquier caso necesitaremos destornilladores adecuados y unos alicates de punta plana por si es necesario sujetar algún tornillo.
 
@@ -12,7 +12,7 @@ Para los motores y el interruptor necesitaremos unos trozos de cable de distinto
 
 | **P0. Motores** | Imágenes |
 |---|:-:|
-| <br>Si partimos de la base que los motores no vienen ya preinstalados con cables, necesitamos:</br><br>- 2 motores DC de 3 a 6V con reductora</br><br>- 4 trozos de hilos de diferentes colores</br><br>- Tijeras o pelacables</br><br>- Soldador para electrónica</br><br>- Se aconseja usar estaño de 1mm sin plomo con núcleo de resina y composición del 99% de Sn, 3% de Ag y 0.7% de Cu</br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen vemos los motores y los cables sin soldar --></FONT></P></br> | ![Motores y cables sin soldar](../img/ensamble/i1.png) |
+| <br>Si partimos de la base que los motores no vienen ya preinstalados con cables, necesitamos:</br><br>- 2 motores DC de 3 a 6V con reductora</br><br>- 4 trozos de hilos de diferentes colores</br><br>- Tijeras o pelacables</br><br>- Soldador para electrónica</br><br>- Se aconseja usar estaño de 1mm sin plomo con núcleo de resina y composición del 99% de Sn, 0.3% de Ag y 0.7% de Cu</br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen vemos los motores y los cables sin soldar --></FONT></P></br> | ![Motores y cables sin soldar](../img/ensamble/i1.png) |
 | </br><br><P align="right"><FONT COLOR="#7D3C98">En la imagen vemos los motores con los cables soldados --></FONT></P></br>  | ![Motores cableados](../img/ensamble/i2.png) |
 
 | **P0. Portapilas** | Imágenes |
@@ -73,19 +73,19 @@ En la imagen siguiente vemos la plataforma base con el soporte para zumbador col
 </center>
 
 ## <FONT COLOR=#007575>**Ballcaster y porta sensores IR**</font>
-En realidad esta pieza podría ser una solamente pero se ha dividido en dos para evitar el uso de soportes en la impresión. El aspecto en tiempo de diseño de ambas piezas lo vemos en las imagenes siguientes: 
+En realidad esta pieza podría ser una solamente pero se ha dividido en dos para evitar el uso de soportes en la impresión. El aspecto en fase de diseño de ambas piezas lo vemos en las imagenes siguientes:
 
 <center>
 
-|![Ballcaster o rueda loca en fase de diseño](../img/3D/imagenes/capturas/06a-ballcaster.png) | ![Porta sensores de infrarrojos en fase de diseño](../img/3D/imagenes/capturas/06b-porta-sensores-IR.png)|
+|![Ballcaster o Ballcaster en fase de diseño](../img/3D/imagenes/capturas/06a-ballcaster.png) | ![Porta sensores de infrarrojos en fase de diseño](../img/3D/imagenes/capturas/06b-porta-sensores-IR.png)|
 
 </center>
 
-| **P3. Rueda loca y porta sensores de infrarrojos** | Imágenes |
+| **P3. Ballcaster y porta sensores de infrarrojos** | Imágenes |
 |---|:-:|
 | <br>Necesitamos:</br><br>- 1 ballcaster impreso</br><br>- 1 portasensores IR impreso</br><br>- 2 tornillos M3x8mm</br><br>- 4 tornillos M3x10mm</br><br>- 6 tuercas M3</br><br>- 2 sensores IR de distancia ajustable detección 2 a 30cm</br><br>- 6 cables tipo dupont H-H de 20 cm</br><br>Colocamos y atornillamos los sensores IR con los tornillos M3x8. Empotramos dos tuerca M3 en la pieza ballcaster y colocamos esta pieza en la parte posterior del porta sensores alineando con los agujeros inferiores y atornillando con dos tornillos M3x10. Finalmente atornillamos el conjunto a la plataforma base utilizando dos tornillos M3x10 y alineando con los agujeros centrales de la base en la parte que muestra un trozo plano</br><P align="right"><FONT COLOR="#7D3C98">En la imagen vemos el aspecto del conjunto montado sobre las piezas impresas --></FONT></P></br> |<br>![Soporte sensor IR fase diseño ](../img/3D/imagenes/capturas/06c-porta-sensores-IR-ballcaster.png)</br><br>![Soporte sensor IR impreso y montado ](../img/3D/imagenes/fotos/06c-porta-sensores-IR-ballcaster.jpeg)</br> |
 
-En la imagen siguiente vemos la plataforma base con el soporte para sensores de infrarrojos y rueda loca colocados en su lugar, tanto en fase de diseño como en la fase montaje real.
+En la imagen siguiente vemos la plataforma base con el soporte para sensores de infrarrojos y Ballcaster colocados en su lugar, tanto en fase de diseño como en la fase montaje real.
 
 <center>
 

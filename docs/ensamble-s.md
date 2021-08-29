@@ -3,7 +3,7 @@
 ***
 
 ## <FONT COLOR=#007575>**Plataforma superior**</font>
-En esta pieza es donde vamos a colocar el servo para el brazo aparta objetos y los elementos de electrónica correspondientes a cada versión. El brazo lo podemos color tanto a la derecha como a la izquierda y recordemos que de forma opcional podemos poner también el soporte del zumbador o un sensor fijo de ultrasonidos. El aspecto de la pieza denominada plataforma superior lo vemos en la imagen siguiente.
+En esta pieza es donde vamos a colocar el servo para el brazo aparta objetos y los elementos de electrónica correspondientes a cada versión. El brazo lo podemos colocar tanto a la derecha como a la izquierda y recordemos que de forma opcional podemos poner también el soporte del zumbador o un sensor fijo de ultrasonidos. El aspecto de la pieza denominada plataforma superior lo vemos en la imagen siguiente.
 
 <center>
 
@@ -14,7 +14,7 @@ En esta pieza es donde vamos a colocar el servo para el brazo aparta objetos y l
 </center>
 
 ## <FONT COLOR=#007575>**Brazo aparta objetos**</font>
-Se trata de una especie de gancho accionado por un servo SG-90 que nos va a servir para apartar objetos detectado por el sensor HC-SR04 de nuestro camino. La idea es que el brazo estará normalmente replegado hacia las ruedas y que, cuando vamos siguiendo una línea o resolviendo un laberinto o simplemente desplazándonos con el robot y detectamos enfrente un objeto del tamaño de una lata de refresco, se accione el brazo para envolverlo, el robot realice un giro arrastrando el objeto fuera de su trayectoria, posteriormente deshaga el giro, retraiga el brazo y continue su camino. El aspecto del brazo en fase de diseño e impreso lo vemos en la imagen siguiente.
+Se trata de una especie de gancho accionado por un servo SG-90 que nos va a servir para apartar objetos detectados por el sensor HC-SR04 del camino o trayectoria a seguir. La idea es que el brazo estará normalmente replegado hacia las ruedas y que, cuando vamos siguiendo una línea o resolviendo un laberinto o simplemente desplazándonos con el robot y detectamos enfrente un objeto del tamaño de una lata de refresco, se accione el brazo para envolverlo, el robot realice un giro arrastrando el objeto fuera de su trayectoria, posteriormente deshaga el giro, retraiga el brazo y continue su camino. El aspecto del brazo en fase de diseño e impreso lo vemos en la imagen siguiente.
 
 <center>
 
@@ -81,7 +81,7 @@ El último paso a realizar es colocar los sensores de ranura sujetos a la plataf
 
 </center>
 
-En las imagenes siguientes vemos mas en detalle el aspecto de estos sensores montados en su lugar.
+En las imagenes siguientes vemos en detalle el aspecto de estos sensores montados en su lugar.
 
 <center>
 

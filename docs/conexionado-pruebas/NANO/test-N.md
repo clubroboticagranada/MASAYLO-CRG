@@ -1,5 +1,5 @@
 # <FONT COLOR=#8B008B>Pruebas básicas de funcionamiento</font>
-Básicamente los ejemplos que utilizaremos para esta versión Nano son los mismos que los utilizados para la versión UNO realizando los cambios a la placa adecuada, que en nuestro caso va a ser una Nano con Old bootloader. En el apartado de software se pueden encontrar los enlaces de descarga y toda la información de la aplicación.
+Básicamente los ejemplos que utilizaremos para esta versión Nano son los mismos que los utilizados para la versión UNO realizando los cambios a la placa adecuada, que en nuestro caso va a ser una Nano con Old bootloader.
 
 ## <FONT COLOR=#007575>**Alimentación**</font>
 Colocamos las pilas AA en su lugar respetando la polaridad de las mismas y accionamos el interruptor. Si todo es correcto en la placa shield y en la del driver L298 se debe encender un diodo LED rojo y en la placa Nano un LED verde, todos ellos indicativos de que están alimentadas, tal y como observamos en la imagen siguiente:
@@ -35,7 +35,7 @@ Si cargamos el programa y dejamos sin accionar el interruptor observaremos como 
 Este GIF se ha creado a partir de un video en formato mp4 utilizando FFMPEG y GIMP y la información obtenida en [este enlace](https://ubunlog.com/gif-animados-vlc-ffmpeg-gimp/).
 
 ## <FONT COLOR=#007575>**Pruebas idénticas a las realizadas en la versión UNO**</font>
-Para las pruebas siguientes podemos simplemente cargar los ejemplos dados para la versión UNO y sin mas que cambiar el tipo de placa ya podemos proceder a cargarlos y comprobar el funcionamiento de los elementos en cuestión.
+Para las pruebas siguientes podemos simplemente cargar los ejemplos dados para la versión UNO y simplemente cambiando el tipo de placa ya podemos proceder a cargarlos y comprobar el funcionamiento de los elementos en cuestión.
 
 * Motores
 * Zumbador
