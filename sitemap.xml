@@ -2,162 +2,177 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ensamble-s/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ensamble/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ficheros-media/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/ficheros/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/about/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/lic/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/soft/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/Miscelanea/webgrafia/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/conex-N/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/elementos-N/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/leer-antes/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/NANO/test-N/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/UNO/conex/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/UNO/elementos/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/conexionado-pruebas/UNO/test/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/ejemplos/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/encoders/</loc>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/incorporar_libreria/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/infrarrojos/</loc>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/instalacion/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/motores/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/por_que/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/servos/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/ultrasonidos/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/libreria/zumbador/</loc>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/PWM/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/descarga/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/distanciaPuertoSerie/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/encoder/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/instalacion/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/primerPrograma/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/primerospasos/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/sensoresIR/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://clubroboticagranada.github.io/MASAYLO-CRG/masayloBlockly/servos/</loc>
-         <lastmod>2021-08-29</lastmod>
+         <lastmod>2021-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
