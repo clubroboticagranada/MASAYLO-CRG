@@ -43,9 +43,12 @@ nav:
     - Instalación: libreria/instalacion.md
     - Incorporación de la librería en un programa: libreria/incorporar_libreria.md
     - Ejemplos de Masaylo: libreria/ejemplos.md
-    - Control de motores: libreria/motores.md
-    - Ultrasonidos: libreria/ultrasonidos.md
-    - Servomotores: libreria/servos.md
+    - Control de motores y movimientos: libreria/motores.md
+    - Ultrasonidos. Detección de obstáculos: libreria/ultrasonidos.md
+    - Uso de Servomotores en cabeza y brazo: libreria/servos.md
+    - Infrarrojos. Detección líneas negras: libreria/infrarrojos.md
+    - Encoders. Control de distancias y ángulos: libreria/encoders.md
+    - Zumbador. Sonidos: libreria/zumbador.md
   - Programación con MasayloBlockly:
     - Descarga e instalación: masayloBlockly/descarga.md
     - Primeros pasos: masayloBlockly/primerospasos.md
