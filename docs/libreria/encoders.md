@@ -16,7 +16,7 @@ Las órdenes que tenemos para controlar los encoders son las siguientes:
 * ***objetoMasaylo.angulo (angulo grados)***: Espera hasta que ambas ruedas del robot han girado el angulo pasado. En el ejemplo *m.angulo (90)*.
 * ***objetoMasaylo.vueltas (n_vueltas)***: Espera hasta que ambas ruedas del robot Masaylo han girado el numero de vueltas indicadas.
 
-En el ejemplo que presentamos a continuación hacemos un bucle for para repetir cuatro veces el desplazamiento del robot 20 cm y el giro hacia derechas de 90º, por tanto el robot debe realizar un desplazamiento en forma de cuadrado. 
+En el ejemplo que presentamos a continuación (ejemplo 3 de la librería), hacemos un bucle for para repetir cuatro veces el desplazamiento del robot 20 cm y el giro hacia derechas de 90º, por tanto el robot debe realizar un desplazamiento en forma de cuadrado. 
 
 <center>
 

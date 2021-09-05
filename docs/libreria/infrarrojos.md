@@ -17,7 +17,7 @@ Las órdenes que tenemos para controlar los sensores de infrarrojos son las sigu
 * ***objetoMasaylo.bIzquierda ()***: Nos devuelve "true" si el sensor de infrarrojos izquierdo está a blanco y "false" si no lo está. En nuestro ejemplo *m.bIzquierda()*.
 * ***objetoMasaylo.bDerecha ()***: Nos devuelve "true" si el sensor de infrarrojos derecho está a blanco y "false" si no lo está. En nuestro ejemplo *m.bDerecha()*.
 
-En el ejemplo que presentamos a continuación se configura el sensor de infrarrojos, y posteriormente, con varios condicionales, se comprueba todas las combinaciones posibles de estados de blanco y negro de los sensores, para mostrar el estado actual de los mismos en la pantalla del ordenador a través de comunicación serie.
+En el ejemplo que presentamos a continuación (ejemplo 9 de la librería), se configura el sensor de infrarrojos, y posteriormente, con varios condicionales, se comprueba todas las combinaciones posibles de estados de blanco y negro de los sensores, para mostrar el estado actual de los mismos en la pantalla del ordenador a través de comunicación serie.
 
 <center>
 
