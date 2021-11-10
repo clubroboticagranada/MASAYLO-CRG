@@ -2,7 +2,7 @@
 La librería se instala como cualquier librería de arduino:
 
 * Descargamos la [Librería](https://github.com/clubroboticagranada/masaylo-libreria/blob/main/Masaylo.zip).
-* 
+
 * Abrimos el IDE de Arduino (entorno de desarrollo de Arduino). Para instalarlo si no lo tienes, lo puedes descargar en la dirección: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 * Nos dirigimos al Menú Programa > Incluir librería > Añadir biblioteca .ZIP ...
 
