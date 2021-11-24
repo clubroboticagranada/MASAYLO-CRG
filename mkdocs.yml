@@ -29,6 +29,7 @@ nav:
     - 3D precisión media: ficheros-media.md
     - Materiales necesarios y ensamblado plataforma base: ensamble.md
     - Materiales necesarios y ensamblado plataforma superior: ensamble-s.md
+    - Ensamblados: ensambles.md
   - Versión UNO. Conexionado y pruebas:
     - Análisis de elementos: conexionado-pruebas/UNO/elementos.md
     - Conexionado: conexionado-pruebas/UNO/conex.md
@@ -59,11 +60,15 @@ nav:
     - Introducción a los bloques lógicos. Uso de sensores de infrarrojos.: masayloBlockly/sensoresIR.md
     - Trabajo con encoder. Control básico de distancias y ángulos: masayloBlockly/encoder.md
     - Uso de servomotores en brazo y cabeza: masayloBlockly/servos.md
+  - Presentaciones de MASAYLO:
+    - Primera presentación: presentaciones/presentacion1.md
+    - Apariciones en medios de comunicación: presentaciones/medios.md
   - Miscelanea:
     - Autores: Miscelanea/about.md
     - Licencias: Miscelanea/lic.md
     - Webgrafia/Bibliografía: Miscelanea/webgrafia.md
     - Software utilizado: Miscelanea/soft.md
+    - Merchandising: Miscelanea/merchandising.md
 
 # 6. Google Analytics
 #google_analytics:
