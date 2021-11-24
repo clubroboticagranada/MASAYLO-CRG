@@ -4,11 +4,7 @@
 
 <center>
 
-<audio controls autoplay>
-	<source src="/presentaciones/entrevista1.mp3" type="audio/mp3">
-	<source src=""/presentaciones/entrevista1.ogg" type="audio/ogg">
-	Elemento de audio no soportado por tu navegador.
-</audio>
+[Enlace a la entrevista](https://www.ondacero.es/emisoras/castilla-la-mancha/ciudad-real/noticias/masaylo-primer-robot-educativo-open-source-origen-castellanomanchego_20211119619786d69e04bd000187385a.html)
 
 </center>
 
