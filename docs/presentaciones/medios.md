@@ -8,6 +8,8 @@
 
 </center>
 
-* Publicado artículo en la revista digital EducarCLM: [Enlace al artículo](https://educarenclm.castillalamancha.es/content/masaylo-robot-open-source-de-origen-castellanomanchego)
+* Publicado artículo el día 19 de noviembre en la revista digital EducarCLM: [Enlace al artículo](https://educarenclm.castillalamancha.es/content/masaylo-robot-open-source-de-origen-castellanomanchego)
 
-* Artículo el lunes 29 de noviembre de 2021 en [La Tribuna de Ciudad Real](https://www.latribunadeciudadreal.es/amp/noticia/za9c1ffb5-f010-8cd1-61c86735327f85b5/202111/un-simpatico-robot-en-el-ambito-educativo?utm_source=www.latribunadeciudadreal.es&utm_medium=twitter?utm_source=www.latribunadeciudadreal.es&utm_medium=whatsapp)
+* Publicado artículo el día 24 de noviembre en el Diario de la mancha, Lanza: [Enlace al artículo](https://www.lanzadigital.com/agenda-cultural/1053424-2/)
+
+* Artículo el día 29 de noviembre de 2021 en [La Tribuna de Ciudad Real](https://www.latribunadeciudadreal.es/amp/noticia/za9c1ffb5-f010-8cd1-61c86735327f85b5/202111/un-simpatico-robot-en-el-ambito-educativo?utm_source=www.latribunadeciudadreal.es&utm_medium=twitter?utm_source=www.latribunadeciudadreal.es&utm_medium=whatsapp)
