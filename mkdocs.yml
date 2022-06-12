@@ -30,6 +30,7 @@ nav:
     - Materiales necesarios y ensamblado plataforma base: ensamble.md
     - Materiales necesarios y ensamblado plataforma superior: ensamble-s.md
     - Ensamblados: ensambles.md
+    - Mejoras en algunos diseños: reformados.md
   - Versión UNO. Conexionado y pruebas:
     - Análisis de elementos: conexionado-pruebas/UNO/elementos.md
     - Conexionado: conexionado-pruebas/UNO/conex.md
